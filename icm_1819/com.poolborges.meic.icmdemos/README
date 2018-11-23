@@ -1,0 +1,21 @@
+= ICM 
+
+
+== Pratical
+
+
+-----
+java.net.NetworkInterface.getDefault()
+-----
+
+
+== Mulcast enable on macos
+
+----
+ifconfig -a
+sudo route -nv add -net 228.0.0.4 -interface en0<DVEREA SER NOME NA PLACA>
+netstat -nr
+ping -t 1 -c 2 228.0.0.4
+sudo tcpdump -ni en1 host 228.0.0.4
+sudo tcpdump -ni en0 host 228.0.0.4
+----
