@@ -1,5 +1,5 @@
 = SGPF
-Paulo Borges (C);
+João Costa, Paulo Borges, (C);
 :revnumber: {version}
 :revdate: {localdate}
 :toc: 
@@ -12,7 +12,7 @@ Paulo Borges (C);
 :keywords: ISEL MEIC                                            
 :imagesdir: ./img 	
 
-NOTE: Last update: 2018-11-30. Generate: {localdate} {localtime}
+NOTE: Last update: 2018-12-10. Generate: {localdate} {localtime}
 
 
 [[doc.summary]]
@@ -20,36 +20,34 @@ NOTE: Last update: 2018-11-30. Generate: {localdate} {localtime}
 
 
 == Sobre
-Instituição: ISEL
+
+----
+Nome: Sistema de Gestão de projeto de financiamento (SGPF)
+Instituição: IPL ISEL, Portugal
 Curso: MEIC
 Disciplina: Engenharia de Software
 Ano Lectivo: __
+----
 
 
 == Elementos de grupo:
 
-* Paulo Borges
+* Paulo Borges 
 * João Iber da Costa
 
 == Prazos 
 
-Datas limites das sub-entregras e entrega Final:	 
-Trabalho pratico 1 - Torniquete: Entrega termina o prazo no dia 25 de Outubro de 2018 as 23:59 
-Engenharia de Software-MI1N - 1819SI
+* Trabalho prático 2 - Analise de requisitos: Entrega termina o prazo no dia 15 Novembro de 2018 as 23:59
 
-Trabalho prático 2 - Analise de requisitos: Entrega termina o prazo no dia 15 Novembro de 2018 as 23:59
-Engenharia de Software-MI1N - 1819SI
+* Trabalho prático 2 - Relatorio de projecto: Entrega termina o prazo no dia 14 Dezembro de 2018 as 23:59
 
-Trabalho prático 2 - Relatorio de projecto: Entrega termina o prazo no dia 14 Dezembro de 2018 as 23:59
-Engenharia de Software-MI1N - 1819SI
+* Trabalho prático 2 - Prototipo: Entrega termina o prazo no dia 22 Dezembro de 2018 as 23:59
 
-Trabalho prático 2 - Prototipo: Entrega termina o prazo no dia 22 Dezembro de 2018 as 23:59
-Engenharia de Software-MI1N - 1819SI
 
 
 == Funcionalidades 
 
-As principais Funcionalidades do Sistema de Gestão de Projetos de Financiamentos(SGPF):
+As principais Funcionalidades do SGPF:
 
 a. Aceitação de candidatura;
 b. Abertura de projecto;
@@ -65,40 +63,46 @@ k. Relatorio de pagamentos por projecto;
 
 
 == Atores:
-     Tecnico - {}
-     Gestor de financiamento{}
-     Comissao de financiamento{}
+
+* Tecnico - {}
+* Gestor de financiamento - {}
+* Comissao de financiamento - {}
 
 == Tipos de diagramas UML
-	FUNCIONALIDADES
-		- Diagramas de Casos de Utilização
 
-	INTERACÃO
-		- Diagramas de Sequência
-		- Diagramas de Comunicação
-		- Diagramas Temporais(Timing Diagrams)
-		- Diagramas de Enquadramento de Interação (Interaction Overview Diagrams)
-	
-	ESTRUTURA
-		- Diagramas de Classes
-		- Diagramas de Objetos
-		- Diagramas de Estrutura Composta
+* FUNCIONALIDADES
+** Diagramas de Casos de Utilização
+//-
 
-	DINAMICA
-		- Diagramas de Transição de Estados
-		- Diagramas de atividades
+* INTERACÃO
+** Diagramas de Sequência
+** Diagramas de Comunicação
+** Diagramas Temporais(Timing Diagrams)
+** Diagramas de Enquadramento de Interação (Interaction Overview Diagrams)
+//-
 
-	IMPLEMENTAÇÃO
-		- Diagramas de componentes
+* ESTRUTURA
+** Diagramas de Classes
+** Diagramas de Objetos
+** Diagramas de Estrutura Composta
+//-
 
-	AMBIENTE
-		- Diagramas de Implantação
+* DINAMICA
+** Diagramas de Transição de Estados
+** Diagramas de atividades
+//-
 
-	ORGANIZAÇÃO
-		- Diagramas de Pacotes(Package Diagrams)
+* IMPLEMENTAÇÃO
+** Diagramas de componentes
+
+* AMBIENTE
+** Diagramas de Implantação
+//-
+
+* ORGANIZAÇÃO
+** Diagramas de Pacotes(Package Diagrams)
 
 
-== Tutoriais:
+== Referencias
 
-* Engenharia de Software - Rational Unified Process (RUP)
-	Link -> https://www.youtube.com/watch?v=5CwEqJB3c5g
+* https://www.youtube.com/watch?v=5CwEqJB3c5g[Engenharia de Software - Rational Unified Process (RUP)]

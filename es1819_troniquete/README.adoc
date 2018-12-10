@@ -1,0 +1,193 @@
+= ES - Trabalho 01 - Torniquete
+Paulo Borges (C);
+
+:revnumber: {version}
+:revdate: {localdate}
+:toc: 
+:toc-placement!:
+:sectnums:                                                          
+:toclevels: 4 	
+:toc-title: Indice	
+:experimental:                                                      
+:description:                             
+:keywords: PERT GANTT                                              
+:imagesdir: ./img 	
+
+NOTE: ISEL, MEIC, 2018-10-24
+
+toc::[]
+
+[[doc.summary]]
+== Sumario
+
+
+== Datas de entregas
+	 
+* Trabalho pratico 1 - Torniquete: Entrega termina o prazo no dia 25 de Outubro de 2018 as 23:59 
+
+
+
+== Tabela transição de estados 
+
+.Tabela transição de estados e ação de estado
+|====
+|Estado Actual |Entrada/TriggerEvent |Proximo Estado |Saida/Ação 
+|====
+
+
+
+== Referencias
+* https://en.wikipedia.org/wiki/Finite-state_machine[finite automaton]
+* https://en.wikipedia.org/wiki/Mealy_machine[Mealy machines]
+* https://en.wikipedia.org/wiki/Moore_machine[Moore machines]
+* https://en.wikipedia.org/wiki/Harel_statechart[Harel statechart]
+
+
+== UML state machine 
+
+UML state machine is an object-based variant of Harel statechart adapted and extended by UML.
+
+
+* An **event** is something that happens that affects the system.
+* Each state machine has a **state**, which governs reaction of the state machine to events.
+
+
+== Maquina de estados Finitas / Finite State Machine (FSM)
+
+
+=== Estado / State 
+
+* Entry Action 
+* Exit Action  
+
+== Transição / Transition
+
+== Extended State Machines 
+
+* Transition can have a https://en.wikipedia.org/wiki/UML_state_machine#Guard_conditions[guard], which means that the transition can "fire" only if the guard evaluates to TRUE.
+
+== Hierarchical state machines (HSM)
+
+hierarchically nested states
+
+* substate
+* superstate
+
+
+* composite states - States that contain other states;
+* simple states - states without internal structure
+* nested state is called a direct substate when it is not contained by any other state; otherwise, it is referred to as a transitively nested substate
+
+== Code
+
+
+.State Machine Implementation
+[source, java]
+----
+public class StateMachine {
+
+  public dispatch(Event triggerEvent)
+  private void transitions()
+
+}
+----
+
+= Torniquete
+
+Torniquete de control de acesso
+
+
+== Estrtura de Directorio
+
+* ES_1819
+** projeto_torniquete/
+*** doc/
+
+== Constituição
+
+* Trinco 
+* Sirene de alarme
+* Detector de Eventos
+
+
+== Eventos
+
+* Cartão detectado (Valido)
+* Passagem detecta
+* Reiniciar
+* Diagnostico 
+* Terminar Diagnostico
+
+
+== Acções (Operações) 
+
+* Trinco: Bloquear, Desbloquear
+* Sirene de Alarme: Activar, Desactivar
+
+
+== Modo de operação 
+
+* Modo Normal 
+* Modo Diagnostico
+
+=== Modo de Operação Normal 
+
+* Esta bloqueado por Omissão 
+* Detectado cartão valido: Acesso Desbloqueado
+* Apos Passagem: Acesso Bloqueado
+
+* Passagem Forçada: Activar Sirene de Alarme (manter activa ate o sistema ser reiniciado)
+
+=== Modo de operação Diagnostico
+
+* Detectado cartão valido para teste: Desbloquear Trinco
+* Detetado passagem: Bloquear Trinco
+
+----
+"Em ambas situações é possivel testar bloqueo, desbloqueo, reiniciar o sistema".
+----
+
+* Seleciona terminar Diagnostico o sistema regressa à situação que se encontrava antes de entrar em diagnostico.
+
+
+== Perguntas/Duvidas
+
+* Como é que se entra no modo diagnostico ??
+* Como é detectado o cartão ??, ou seja, se é parte do sistema algum leitor de cartão??
+
+
+== Saber Mais
+* Modo de operação Normal - usa "Maquina de Estados com Memoria"
+
+
+== Caso de uso 
+
+
+
+== Eclipse IDE - Mudar Workspace
+* File -> Switch Workspace -> "Devera escola a pasta on irar definir o workspace"
+
+
+== Eclipse IDE - Criar Projeto Papyurus
+* File ->
+
+== Elipse IDE - Mudar Perspectiva para Papyrus
+
+
+== Eclipse IDE - Na vista "Model Explorer"
+
+* Directa rato -> New Child -> Model -> "Analise"
+
+
+== Eclipse IDE - Criar Diagrama Modelo Dominio
+
+* Na vista "Model Explorer"
+* selecione "Analise"
+* Direta rato -> New Diagram -> Class -> "Modelo_Dominio"
+
+
+
+
+
+
+
