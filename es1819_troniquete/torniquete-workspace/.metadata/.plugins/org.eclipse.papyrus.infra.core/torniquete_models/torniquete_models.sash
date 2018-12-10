@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<di:SashWindowsMngr xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:di="http://www.eclipse.org/papyrus/0.7.0/sashdi">
+  <sashModel currentSelection="//@sashModel/@windows.0/@children.0" restoreActivePage="true">
+    <windows>
+      <children xsi:type="di:TabFolder" currentSelection="//@sashModel/@windows.0/@children.0/@children.2">
+        <children>
+          <emfPageIdentifier href="papyrus.welcome:dynamic#/"/>
+        </children>
+        <children>
+          <emfPageIdentifier href="platform:/resource/torniquete_models/torniquete_models.notation#_6jHBYMWyEeiU0YCEv5h8xA"/>
+        </children>
+        <children>
+          <emfPageIdentifier href="platform:/resource/torniquete_models/torniquete_models.notation#_2qF4YNg9EeirdsVf0Ppm_w"/>
+        </children>
+        <children>
+          <emfPageIdentifier href="platform:/resource/torniquete_models/torniquete_models.notation#_CbuzQNhmEeiCQdV-49bKQQ"/>
+        </children>
+        <children>
+          <emfPageIdentifier href="platform:/resource/torniquete_models/torniquete_models.notation#_hs3cYMW5EeiU0YCEv5h8xA"/>
+        </children>
+        <children>
+          <emfPageIdentifier href="platform:/resource/torniquete_models/torniquete_models.notation#_NyQu4Ms6EeippqtU6vI-bA"/>
+        </children>
+      </children>
+    </windows>
+  </sashModel>
+</di:SashWindowsMngr>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_JrdIQMWtEei5aZMpSuBy9Q" name="torniquete-controlo">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_Jzyk4MWtEei5aZMpSuBy9Q">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_T-QXUMW5EeiBwILyf9Eznw" name="sq - Torniquete">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_s2C8gM5aEeihT4nXiBTpxg" name="" type="_gvUdwMWzEeiBwILyf9Eznw"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_AQHIgc5bEeihT4nXiBTpxg" name="" type="_j3fIkMWzEeiBwILyf9Eznw"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_P86OAM5aEeihT4nXiBTpxg" name="Torniquete" represents="_2X-BM8WzEeiBwILyf9Eznw" coveredBy="_EVSeEM5vEeihT4nXiBTpxg _EWgmEM5vEeihT4nXiBTpxg"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_Wna-MM5aEeihT4nXiBTpxg" name="DetectorEvento" represents="_00ifkMWzEeiBwILyf9Eznw" coveredBy="_EVTFIM5vEeihT4nXiBTpxg _EWf_AM5vEeihT4nXiBTpxg _EWW1EM5vEeihT4nXiBTpxg"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_s2BuYM5aEeihT4nXiBTpxg" name="" represents="_s2C8gM5aEeihT4nXiBTpxg"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_AQHIgM5bEeihT4nXiBTpxg" name="" represents="_AQHIgc5bEeihT4nXiBTpxg"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_EVSeEM5vEeihT4nXiBTpxg" name="iniciarTorniqueteSendEvent" covered="_P86OAM5aEeihT4nXiBTpxg" message="_EVQo4M5vEeihT4nXiBTpxg"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_EVTFIM5vEeihT4nXiBTpxg" name="iniciarDetecaoReceiveEvent" covered="_Wna-MM5aEeihT4nXiBTpxg" message="_EVQo4M5vEeihT4nXiBTpxg"/>
+    <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_EWW1EM5vEeihT4nXiBTpxg" name="detecaoEventosBehaviorExecutionSpecification" covered="_Wna-MM5aEeihT4nXiBTpxg" finish="_EWf_AM5vEeihT4nXiBTpxg" start="_EVTFIM5vEeihT4nXiBTpxg"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_EWf_AM5vEeihT4nXiBTpxg" name="terminarDetecaoSendEvent" covered="_Wna-MM5aEeihT4nXiBTpxg" message="_EWew4M5vEeihT4nXiBTpxg"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_EWgmEM5vEeihT4nXiBTpxg" name="pararTorniqueteReceiveEvent" covered="_P86OAM5aEeihT4nXiBTpxg" message="_EWew4M5vEeihT4nXiBTpxg"/>
+    <message xmi:type="uml:Message" xmi:id="_EVQo4M5vEeihT4nXiBTpxg" name="detectar" receiveEvent="_EVTFIM5vEeihT4nXiBTpxg" sendEvent="_EVSeEM5vEeihT4nXiBTpxg" signature="_FsjeMMW3EeiBwILyf9Eznw"/>
+    <message xmi:type="uml:Message" xmi:id="_EWew4M5vEeihT4nXiBTpxg" name="detectar_Result" messageSort="reply" receiveEvent="_EWgmEM5vEeihT4nXiBTpxg" sendEvent="_EWf_AM5vEeihT4nXiBTpxg" signature="_FsjeMMW3EeiBwILyf9Eznw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Activity" xmi:id="_ESY7YMW5EeiBwILyf9Eznw" name="ac - Torniquete - Modo Normal"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_xa8H0Ma2EeibQfnyVINusg" name="Torniquete">
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_0UaPUMa2EeibQfnyVINusg" name="Alarme"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_5Bj68Ma2EeibQfnyVINusg" name="Passagem"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_61OQ8Ma2EeibQfnyVINusg" name="Diagnostico"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Model" xmi:id="_mKX5QM5bEeihT4nXiBTpxg" name="Modelo Dominio">
+    <packagedElement xmi:type="uml:Class" xmi:id="_cLLkMMWzEeiBwILyf9Eznw" name="Torniquete">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_00ifkMWzEeiBwILyf9Eznw" name="detectorevento" visibility="private" type="_mRMK4MWzEeiBwILyf9Eznw" association="_00eOIMWzEeiBwILyf9Eznw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_00kUwMWzEeiBwILyf9Eznw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_00kUwcWzEeiBwILyf9Eznw" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_2X-BMMWzEeiBwILyf9Eznw" name="trinco" visibility="private" type="_gvUdwMWzEeiBwILyf9Eznw" association="_2X8zEMWzEeiBwILyf9Eznw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2X-BMcWzEeiBwILyf9Eznw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2X-BMsWzEeiBwILyf9Eznw" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_kwu9YsW2EeiBwILyf9Eznw" name="sirene" visibility="private" type="_j3fIkMWzEeiBwILyf9Eznw" association="_kwuWUMW2EeiBwILyf9Eznw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kwu9Y8W2EeiBwILyf9Eznw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kwvkcMW2EeiBwILyf9Eznw" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_gvUdwMWzEeiBwILyf9Eznw" name="Trinco">
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_aK81AMW3EeiBwILyf9Eznw" name="bloquear"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_dyRhAMW3EeiBwILyf9Eznw" name="desbloquear"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_j3fIkMWzEeiBwILyf9Eznw" name="Sirene">
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_jYydkMW3EeiBwILyf9Eznw" name="activar"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_kt094MW3EeiBwILyf9Eznw" name="desactivar"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_mRMK4MWzEeiBwILyf9Eznw" name="Detector">
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_FsjeMMW3EeiBwILyf9Eznw" name="detectar">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_lL_jwMW7EeiBwILyf9Eznw" name="Event" type="_B62KUMW7EeiBwILyf9Eznw" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_B62KUMW7EeiBwILyf9Eznw" name="Evento">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_GeetkMW7EeiBwILyf9Eznw" name="PASSAGEM_DETECTADA"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_JATxIMW7EeiBwILyf9Eznw" name="CARTAO_DETECTATO"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_OCWHoMW7EeiBwILyf9Eznw" name="REINICIAR"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_uRERkM5xEeihT4nXiBTpxg" name="CARTAO_DETETADO"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_yits8M5xEeihT4nXiBTpxg" name="MODO_DIAGNOSTICO"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Model" xmi:id="_uoJW0M5bEeihT4nXiBTpxg" name="uc - Torniquete">
+    <packagedElement xmi:type="uml:Association" xmi:id="_00eOIMWzEeiBwILyf9Eznw" visibility="public" memberEnd="_00ifkMWzEeiBwILyf9Eznw _00kUwsWzEeiBwILyf9Eznw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_00hRcMWzEeiBwILyf9Eznw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_00hRccWzEeiBwILyf9Eznw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_00kUwsWzEeiBwILyf9Eznw" name="torniquete" type="_cLLkMMWzEeiBwILyf9Eznw" association="_00eOIMWzEeiBwILyf9Eznw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_2X8zEMWzEeiBwILyf9Eznw" visibility="package" memberEnd="_2X-BMMWzEeiBwILyf9Eznw _2X-BM8WzEeiBwILyf9Eznw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_2X9aIMWzEeiBwILyf9Eznw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_2X9aIcWzEeiBwILyf9Eznw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_2X-BM8WzEeiBwILyf9Eznw" name="torniquete" type="_cLLkMMWzEeiBwILyf9Eznw" association="_2X8zEMWzEeiBwILyf9Eznw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_kwuWUMW2EeiBwILyf9Eznw" memberEnd="_kwu9YsW2EeiBwILyf9Eznw _kwvkccW2EeiBwILyf9Eznw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_kwu9YMW2EeiBwILyf9Eznw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_kwu9YcW2EeiBwILyf9Eznw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_kwvkccW2EeiBwILyf9Eznw" name="torniquete" type="_cLLkMMWzEeiBwILyf9Eznw" association="_kwuWUMW2EeiBwILyf9Eznw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uddr8MW3EeiBwILyf9Eznw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_udlnwMW3EeiBwILyf9Eznw" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:StateMachine" xmi:id="_ApzZUNe7EeiwE9exk1yxkQ" name="Torniquete">
+    <region xmi:type="uml:Region" xmi:id="_D2WN0Ne7EeiwE9exk1yxkQ" name="Region1">
+      <transition xmi:type="uml:Transition" xmi:id="_bukB4NhEEeiCQdV-49bKQQ" source="_V9gpQNhEEeiCQdV-49bKQQ" target="_XjVXkNhEEeiCQdV-49bKQQ"/>
+      <transition xmi:type="uml:Transition" xmi:id="_sEZycNhFEeiCQdV-49bKQQ" name="bloqueado" source="_E_E8wNhFEeiCQdV-49bKQQ" target="_BXl4sNhFEeiCQdV-49bKQQ"/>
+      <transition xmi:type="uml:Transition" xmi:id="_EERr8NhGEeiCQdV-49bKQQ" name="normal" source="_ZE7GINhEEeiCQdV-49bKQQ" target="_CBn3sNhGEeiCQdV-49bKQQ"/>
+      <transition xmi:type="uml:Transition" xmi:id="_I3otQNhGEeiCQdV-49bKQQ" name="reiniciar" source="_ZE7GINhEEeiCQdV-49bKQQ" target="_XjVXkNhEEeiCQdV-49bKQQ"/>
+      <transition xmi:type="uml:Transition" xmi:id="_L6n9INhGEeiCQdV-49bKQQ" name="diagnostico" source="_XjVXkNhEEeiCQdV-49bKQQ" target="_ZE7GINhEEeiCQdV-49bKQQ"/>
+      <transition xmi:type="uml:Transition" xmi:id="_eDqmINhGEeiCQdV-49bKQQ" name="testar_bloquear" source="_ZE7GINhEEeiCQdV-49bKQQ" target="_ZE7GINhEEeiCQdV-49bKQQ"/>
+      <transition xmi:type="uml:Transition" xmi:id="_vQwkQNhGEeiCQdV-49bKQQ" name="testar_desbloquear" source="_ZE7GINhEEeiCQdV-49bKQQ" target="_ZE7GINhEEeiCQdV-49bKQQ"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_V9gpQNhEEeiCQdV-49bKQQ" name="Inicio"/>
+      <subvertex xmi:type="uml:State" xmi:id="_XjVXkNhEEeiCQdV-49bKQQ" name="Modo Normal">
+        <region xmi:type="uml:Region" xmi:id="_BXkDgthFEeiCQdV-49bKQQ" name="Region1">
+          <transition xmi:type="uml:Transition" xmi:id="_T05hgNhFEeiCQdV-49bKQQ" source="_O0PrENhFEeiCQdV-49bKQQ" target="_BXl4sNhFEeiCQdV-49bKQQ"/>
+          <transition xmi:type="uml:Transition" xmi:id="_VuVIUNhFEeiCQdV-49bKQQ" name="passagem" source="_BXl4sNhFEeiCQdV-49bKQQ" target="_EDOYgNhFEeiCQdV-49bKQQ"/>
+          <transition xmi:type="uml:Transition" xmi:id="_nm_L8NhFEeiCQdV-49bKQQ" name="reiniciar" source="_EDOYgNhFEeiCQdV-49bKQQ" target="_BXl4sNhFEeiCQdV-49bKQQ"/>
+          <transition xmi:type="uml:Transition" xmi:id="_2HoK4NhFEeiCQdV-49bKQQ" name="cartao" source="_BXl4sNhFEeiCQdV-49bKQQ" target="_E_E8wNhFEeiCQdV-49bKQQ"/>
+          <subvertex xmi:type="uml:State" xmi:id="_BXl4sNhFEeiCQdV-49bKQQ" name="Bloqueado">
+            <connectionPoint xmi:type="uml:Pseudostate" xmi:id="_gDHjINhLEeiCQdV-49bKQQ" name="BloquearAcao" kind="entryPoint"/>
+          </subvertex>
+          <subvertex xmi:type="uml:State" xmi:id="_EDOYgNhFEeiCQdV-49bKQQ" name="Alarme"/>
+          <subvertex xmi:type="uml:State" xmi:id="_E_E8wNhFEeiCQdV-49bKQQ" name="Desbloqueado"/>
+          <subvertex xmi:type="uml:Pseudostate" xmi:id="_O0PrENhFEeiCQdV-49bKQQ" name="inicio"/>
+          <subvertex xmi:type="uml:Pseudostate" xmi:id="_CBn3sNhGEeiCQdV-49bKQQ" name="ShallowHistory" kind="shallowHistory"/>
+        </region>
+      </subvertex>
+      <subvertex xmi:type="uml:State" xmi:id="_ZE7GINhEEeiCQdV-49bKQQ" name="Modo Diagnostico">
+        <region xmi:type="uml:Region" xmi:id="_s2wR4dhEEeiCQdV-49bKQQ" name="Region1">
+          <transition xmi:type="uml:Transition" xmi:id="_QAxTINhGEeiCQdV-49bKQQ" name="passagem" source="_4-Q2QNhEEeiCQdV-49bKQQ" target="_t8hAENhEEeiCQdV-49bKQQ"/>
+          <transition xmi:type="uml:Transition" xmi:id="_ULltwNhGEeiCQdV-49bKQQ" name="cartao" source="_t8hAENhEEeiCQdV-49bKQQ" target="_4-Q2QNhEEeiCQdV-49bKQQ"/>
+          <transition xmi:type="uml:Transition" xmi:id="_dOppsNhGEeiCQdV-49bKQQ" source="_s22_kNhEEeiCQdV-49bKQQ" target="_t8hAENhEEeiCQdV-49bKQQ"/>
+          <subvertex xmi:type="uml:Pseudostate" xmi:id="_s22_kNhEEeiCQdV-49bKQQ" name="incio"/>
+          <subvertex xmi:type="uml:State" xmi:id="_t8hAENhEEeiCQdV-49bKQQ" name="TesteCartao"/>
+          <subvertex xmi:type="uml:State" xmi:id="_4-Q2QNhEEeiCQdV-49bKQQ" name="TestePassagem"/>
+        </region>
+      </subvertex>
+    </region>
+  </packagedElement>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_vyK6INhEEeiCQdV-49bKQQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_vyNWYNhEEeiCQdV-49bKQQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+  </profileApplication>
+</uml:Model>

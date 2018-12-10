@@ -1,0 +1,93 @@
+= ES - Trabalho 01 - Torniquete
+Paulo Borges (C);
+
+:revnumber: {version}
+:revdate: {localdate}
+:toc: 
+:toc-placement!:
+:sectnums:                                                          
+:toclevels: 4 	
+:toc-title: Indice	
+:experimental:                                                      
+:description:                             
+:keywords: PERT GANTT                                              
+:imagesdir: ./img 	
+
+NOTE: ISEL, MEIC, 2018-10-24
+
+toc::[]
+
+[[doc.summary]]
+== Sumario
+
+
+== Tabela transição de estados 
+
+.Tabela transição de estados e ação de estado
+|====
+|Estado Actual |Entrada/TriggerEvent |Proximo Estado |Saida/Ação 
+|====
+
+
+
+
+
+
+== 
+*  https://en.wikipedia.org/wiki/Finite-state_machine[finite automaton]
+* https://en.wikipedia.org/wiki/Mealy_machine[Mealy machines]
+* https://en.wikipedia.org/wiki/Moore_machine[Moore machines]
+* https://en.wikipedia.org/wiki/Harel_statechart[Harel statechart]
+
+
+== UML state machine 
+
+UML state machine is an object-based variant of Harel statechart adapted and extended by UML.
+
+
+
+* An **event** is something that happens that affects the system.
+* Each state machine has a **state**, which governs reaction of the state machine to events.
+
+
+=== (FSM)
+
+
+=== Estado (State) 
+
+
+
+* Entry Action 
+* Exit Action  
+
+Transição (Transition)
+
+== Extended State Machines 
+
+* Transition can have a https://en.wikipedia.org/wiki/UML_state_machine#Guard_conditions[guard], which means that the transition can "fire" only if the guard evaluates to TRUE.
+
+== Hierarchical state machines (HSM)
+
+hierarchically nested states
+
+* substate
+* superstate
+
+
+* composite states - States that contain other states;
+* simple states - states without internal structure
+* nested state is called a direct substate when it is not contained by any other state; otherwise, it is referred to as a transitively nested substate
+
+== Code
+
+
+.State Machine Implementation
+[source, java]
+----
+public class StateMachine {
+
+  public dispatch(Event triggerEvent)
+  private void transitions()
+
+}
+----

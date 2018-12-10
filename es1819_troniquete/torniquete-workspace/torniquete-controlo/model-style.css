@@ -1,0 +1,82 @@
+/* Apply to all elements */
+*{
+	fillColor: white;
+	fontName: Arial;
+	elementIcon:false;
+	gradient:none;
+	fontHeight: 7;
+}
+
+/* Structure related style */
+
+Model {
+	bold: true;
+	fillColor: white;
+	gradient: white;
+}
+
+Package{
+	bold: true;
+	qualifiedNameDepth:full;
+}
+
+Class{
+	bold: true;
+}
+
+Class > Compartment[kind="attributes"] {
+    visible:true;
+}
+
+Class > Compartment[kind="nestedclassifiers"] {
+    visible:false;
+}
+
+[appliedStereotypes~="Metaclass"]{
+	bold: true;
+	fillColor: lightgrey;
+}
+
+Property{
+	bold: false;
+}
+
+Comment{
+	fillColor: beige;
+}
+
+Connector{
+	lineWidth: 3px;
+}
+
+Operation{
+	maskLabel: name,
+	return multiplicity,
+	return type,
+	parametersdirection,
+	parametersname,
+	parametersmultiplicity,
+	parameterstype,
+	visibility;
+	fontName: Arial;
+}
+
+Constraint{
+	fillColor: beige;
+}
+
+Extension, Association, Generalization, Dependency, Connector{
+	routing: Rectilinear;
+}
+
+DataType{
+	bold: true;
+}
+
+Enumeration{
+	bold: true;
+}
+
+EnumerationLiteral{
+	bold: false;
+}

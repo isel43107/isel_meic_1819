@@ -1,0 +1,15 @@
+= Notas casos de utilizacao 
+
+Caso de Utilização Atribuir Gestor
+Caso de Utilização Solicitar Reforco
+Caso de Utilização Avaliar Projecto
+Caso de Utilização Reenquadrar Projecto
+
+Aceitar Candidatura
+Caso de Utilização Abrir (Analisar) Projecto
+Caso de Utilização Emitir Parecer Técnico (Analisar candidatura)
+Caso de Utilização Realizar Reforço (Analisar Reforço)
+Caso de Utilização Realizar Pagamento
+Caso de Utilização Suspender Projecto
+Caso de Utilização Reactivar Projecto
+Caso de Utilização Alterar Dados

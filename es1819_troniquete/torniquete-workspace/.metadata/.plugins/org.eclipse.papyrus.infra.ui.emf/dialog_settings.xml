@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.papyrus.infra.ui.emf.providers.EMFGraphicalContentProvider_history_container_platform:/resource/torniquete-controlo/torniquete-controlo.uml:uml:NamedElement:signature">
+		<section name="History">
+			<list key="PreviousSelection">
+				<item value="platform:/resource/torniquete-controlo/torniquete-controlo.uml#_t-JBwMWuEei5aZMpSuBy9Q"/>
+			</list>
+		</section>
+	</section>
+	<section name="org.eclipse.papyrus.infra.ui.emf.providers.EMFGraphicalContentProvider_history__platform:/resource/torniquete-controlo/torniquete-controlo.uml:uml:BehavioralFeature:specification">
+	</section>
+	<section name="org.eclipse.papyrus.infra.ui.emf.providers.EMFGraphicalContentProvider_history__platform:/resource/torniquete-controlo/torniquete-controlo.uml:uml:Namespace:context">
+		<section name="History">
+			<list key="PreviousSelection">
+				<item value="platform:/resource/torniquete-controlo/torniquete-controlo.uml#_B62KUMW7EeiBwILyf9Eznw"/>
+			</list>
+		</section>
+	</section>
+	<section name="org.eclipse.papyrus.infra.ui.emf.providers.EMFGraphicalContentProvider_history__platform:/resource/torniquete-controlo/torniquete-controlo.uml:uml:NamedElement:signature">
+		<section name="History">
+			<list key="PreviousSelection">
+				<item value="platform:/resource/torniquete-controlo/torniquete-controlo.uml#_FsjeMMW3EeiBwILyf9Eznw"/>
+			</list>
+		</section>
+	</section>
+	<section name="org.eclipse.papyrus.infra.ui.emf.providers.EMFGraphicalContentProvider_history__platform:/resource/torniquete-controlo/torniquete-controlo.uml:uml:OccurrenceSpecification:start">
+	</section>
+	<section name="org.eclipse.papyrus.infra.ui.emf.providers.EMFGraphicalContentProvider_history__platform:/resource/torniquete-controlo/torniquete-controlo.uml:uml:Type:type">
+		<section name="History">
+			<list key="PreviousSelection">
+				<item value="platform:/resource/torniquete-controlo/torniquete-controlo.uml#_B62KUMW7EeiBwILyf9Eznw"/>
+			</list>
+		</section>
+	</section>
+	<section name="org.eclipse.papyrus.infra.ui.emf.providers.EMFGraphicalContentProvider_history__platform:/resource/torniquete-controlo/torniquete-controlo.uml:uml:Action:action">
+	</section>
+	<section name="org.eclipse.papyrus.infra.ui.emf.providers.EMFGraphicalContentProvider_history__platform:/resource/torniquete-controlo/torniquete-controlo.notation:stylesheets:StyleSheet:stylesheets">
+	</section>
+	<section name="org.eclipse.papyrus.infra.ui.emf.providers.EMFGraphicalContentProvider_history__uml:Type:type">
+		<section name="History">
+			<list key="PreviousSelection">
+				<item value="platform:/resource/torniquete_models/torniquete_models.uml#_tVZ6kMwAEeippqtU6vI-bA"/>
+				<item value="platform:/resource/torniquete-controlo/torniquete-controlo.uml#_B62KUMW7EeiBwILyf9Eznw"/>
+			</list>
+		</section>
+	</section>
+	<section name="org.eclipse.papyrus.infra.ui.emf.providers.EMFGraphicalContentProvider_history__uml:Port:onPort">
+	</section>
+	<section name="org.eclipse.papyrus.infra.ui.emf.providers.EMFGraphicalContentProvider_history__platform:/resource/torniquete-controlo/torniquete-controlo.uml:uml:Behavior:behavior">
+	</section>
+	<section name="org.eclipse.papyrus.infra.ui.emf.customizationManager">
+	</section>
+	<section name="org.eclipse.papyrus.infra.ui.emf.providers.EMFGraphicalContentProvider_history__platform:/resource/torniquete-controlo/torniquete-controlo.uml:uml:ConnectableElement:represents">
+		<section name="History">
+			<list key="PreviousSelection">
+				<item value="platform:/resource/torniquete-controlo/torniquete-controlo.uml#_00ifkMWzEeiBwILyf9Eznw"/>
+				<item value="platform:/resource/torniquete-controlo/torniquete-controlo.uml#_2X-BM8WzEeiBwILyf9Eznw"/>
+				<item value="platform:/resource/torniquete-controlo/torniquete-controlo.uml#_kwu9YsW2EeiBwILyf9Eznw"/>
+				<item value="platform:/resource/torniquete-controlo/torniquete-controlo.uml#_00kUwsWzEeiBwILyf9Eznw"/>
+			</list>
+		</section>
+	</section>
+	<section name="org.eclipse.papyrus.infra.ui.emf.providers.EMFGraphicalContentProvider_history_container_platform:/resource/torniquete-controlo/torniquete-controlo.uml:uml:Action:action">
+		<section name="History">
+			<list key="PreviousSelection">
+				<item value="platform:/resource/torniquete-controlo/torniquete-controlo.uml#_ESY7YMW5EeiBwILyf9Eznw"/>
+			</list>
+		</section>
+	</section>
+	<section name="org.eclipse.papyrus.infra.ui.emf.providers.EMFGraphicalContentProvider_history__uml:Event:event">
+	</section>
+	<section name="org.eclipse.papyrus.infra.ui.emf.providers.EMFGraphicalContentProvider_history__platform:/resource/torniquete-controlo/torniquete-controlo.uml:uml:PartDecomposition:decomposedAs">
+	</section>
+	<section name="org.eclipse.papyrus.infra.ui.emf.providers.EMFGraphicalContentProvider_history__uml:InstanceSpecification:instance">
+		<section name="History">
+			<list key="PreviousSelection">
+				<item value="platform:/resource/torniquete-controlo/torniquete-controlo.uml#_GeetkMW7EeiBwILyf9Eznw"/>
+			</list>
+		</section>
+	</section>
+	<section name="org.eclipse.papyrus.infra.ui.emf.providers.EMFGraphicalContentProvider_history__platform:/resource/torniquete-controlo/torniquete-controlo.uml:uml:Element:constrainedElement">
+		<section name="History">
+			<list key="PreviousSelection">
+				<item value="platform:/resource/torniquete-controlo/torniquete-controlo.uml#_JATxIMW7EeiBwILyf9Eznw"/>
+			</list>
+		</section>
+	</section>
+	<section name="org.eclipse.papyrus.infra.ui.emf.providers.EMFGraphicalContentProvider_history__platform:/resource/torniquete-controlo/torniquete-controlo.uml:uml:UseCase:useCase">
+	</section>
+</section>

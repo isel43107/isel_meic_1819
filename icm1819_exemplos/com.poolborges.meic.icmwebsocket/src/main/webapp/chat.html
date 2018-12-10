@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>PB.ICM.Websocket </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <script type="text/javascript">
+            var uri = "ws://"+ document.location.host + "/chat";
+            
+            var ws = new WebSocket(uri);
+            
+            ws.onopen = function(){
+                debug("onOpen");
+            }
+            
+            ws.onmessage = function(event){
+                debug("onMessage: "+event.data);
+            }
+            
+            ws.onclose = function(code){
+                debug("onClose: "+code);
+            }
+            ws.onerror = function(error){
+                debug("onError: "+error);
+            }
+            
+            function debug(s){
+                var d = document.getElementById("debug");
+                d.innerHTML = d.innerHTML + "<br>"+ s;
+            }
+            
+            function sendMessage(msg){
+                if(!("WebSocket" in window)){
+                    debug("You browser don't suppport WebSocket");
+                    return;
+                }
+                ws.send(msg);
+            }
+            
+            
+            function send(){
+                sendMessage(document.getElementById("msg").value);
+            }
+        </script>
+    </head>
+    <body>
+        <h1>PB.ICM.Websocket echo</h1>
+        
+        <hr>
+        <h2>INPUT</h2>
+        <div>
+            UserID: <input id="userID" type="text" />
+            Message: <input id="msg" type="text"/>
+        </div>
+        <button onclick="send();">Send</button>
+        
+        <hr>
+        <h2>DEBUG</h2>
+        <div id="debug"></div>
+    </body>
+</html>

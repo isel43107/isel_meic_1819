@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_JdZgAPpkEeiHDuF8B8XG5g" name="sgpf_model">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_Jm9EoPpkEeiHDuF8B8XG5g">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_RS-VIPpkEeiHDuF8B8XG5g" name="Analise"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_TcXqkPpkEeiHDuF8B8XG5g" name="Desenho">
+    <packagedElement xmi:type="uml:Package" xmi:id="_im2zkPprEeiHDuF8B8XG5g" name="ModeloLogico">
+      <packagedElement xmi:type="uml:Class" xmi:id="_eI96sPplEeiHDuF8B8XG5g" name="ProjetoFinanciamento"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_gW4jwPplEeiHDuF8B8XG5g" name="Bonificacao">
+        <generalization xmi:type="uml:Generalization" xmi:id="_1zuDUPpmEeiHDuF8B8XG5g" general="_eI96sPplEeiHDuF8B8XG5g"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_0MkNYPpoEeiHDuF8B8XG5g" name="periodoDataInicio" visibility="public"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_OvrfsPppEeiHDuF8B8XG5g" name="taxa" visibility="public"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_Q1_r8PppEeiHDuF8B8XG5g" name="montanteMaximo" visibility="public"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_j29bcPppEeiHDuF8B8XG5g" name="periodoDataFinal" visibility="public"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_hnAH0PplEeiHDuF8B8XG5g" name="Incentivo">
+        <generalization xmi:type="uml:Generalization" xmi:id="_0vRjwPpmEeiHDuF8B8XG5g" general="_eI96sPplEeiHDuF8B8XG5g"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="__ZY9EPpmEeiHDuF8B8XG5g" name="Despacho"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_BU_HEPpnEeiHDuF8B8XG5g" name="DespachoFinanciamento">
+        <generalization xmi:type="uml:Generalization" xmi:id="_75CmUPpnEeiHDuF8B8XG5g" general="__ZY9EPpmEeiHDuF8B8XG5g"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_C8FnwPpnEeiHDuF8B8XG5g" name="DespachoReforco">
+        <generalization xmi:type="uml:Generalization" xmi:id="_8gQ-YPpnEeiHDuF8B8XG5g" general="__ZY9EPpmEeiHDuF8B8XG5g"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_FQy1UPpnEeiHDuF8B8XG5g" name="DespachoAbertura">
+        <generalization xmi:type="uml:Generalization" xmi:id="_FxfSIPpoEeiHDuF8B8XG5g" general="__ZY9EPpmEeiHDuF8B8XG5g"/>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Activity" xmi:id="_ES0cEPplEeiHDuF8B8XG5g" name="Activity4"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_AouYYPrzEeiHDuF8B8XG5g" name="Historico">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_yYJR4Pr2EeiHDuF8B8XG5g" name="evento" visibility="public"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_0HZpAPr2EeiHDuF8B8XG5g" name="estadoAtual" visibility="public"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_8rns0Pr2EeiHDuF8B8XG5g" name="estadoProximo" visibility="public"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_HNl2wPr3EeiHDuF8B8XG5g" name="acao" visibility="public"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_JfIbkPr3EeiHDuF8B8XG5g" name="utilizador" visibility="public"/>
+  </packagedElement>
+</uml:Model>

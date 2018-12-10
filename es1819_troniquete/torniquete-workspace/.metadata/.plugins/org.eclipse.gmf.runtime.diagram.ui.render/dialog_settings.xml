@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="CopyToImageDialog">
+		<item value="/Users/pauloborges/OneDrive/OneDrive - Instituto Superior de Engenharia de Lisboa/MESTRADO_2018_2019/SEMESTRE_1/ES_1819/ES1819_GRUPO/projeto_torniquete/doc" key="CopyToImageDialog.folder"/>
+		<item value="false" key="CopyToImageDialog.overwriteExisting"/>
+		<item value="png" key="CopyToImageDialog.imageFormat"/>
+		<item value="false" key="CopyToImageDialog.exportToHTML"/>
+	</section>
+</section>

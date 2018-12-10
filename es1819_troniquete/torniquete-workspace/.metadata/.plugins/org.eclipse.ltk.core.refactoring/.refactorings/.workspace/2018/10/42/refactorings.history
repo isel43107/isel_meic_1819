@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;torniquete-controlo.javagen&apos;" deleteContents="true" description="Delete resource &apos;torniquete-controlo.javagen&apos;" element1="/torniquete-controlo.javagen" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1539730364570"/>
+</session>
