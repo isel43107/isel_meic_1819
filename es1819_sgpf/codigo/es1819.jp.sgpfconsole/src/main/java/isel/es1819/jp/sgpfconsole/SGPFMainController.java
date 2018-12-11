@@ -7,6 +7,8 @@
  */
 package isel.es1819.jp.sgpfconsole;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 import java.util.Scanner;
 
 /**
@@ -19,18 +21,24 @@ public class SGPFMainController {
     SGPFMainMenuModel mainMenuModel = new SGPFMainMenuModel();
 
     public void executar() {
-        try (Scanner in = new Scanner(System.in)) {
+        
+        SgpfBaseRunner runner = new SgpfBaseRunner();
+        runner.run(null);
+/*
             while (true) {
-                mainMenuView.showMenu();
-                String opcao = in.nextLine();
-                if (opcao.equals("sair")) {
-                    break;
-                }
-                if (!opcao.isEmpty()) {
-                    mainMenuModel.opcaoHandler(opcao.charAt(0));
-                }
+                try (BufferedReader br = new BufferedReader(new InputStreamReader(System.in))){
+                    br.reset();
+                    mainMenuView.showMenu();
+                    String opcao = br.readLine();
+                    if (opcao.equals("sair")) {
+                        break;
+                    }
+                    if (!opcao.isEmpty()) {
+                        mainMenuModel.opcaoHandler(opcao.charAt(0));
+                    }
+                }catch(Exception ex){}
             }
-        }
+*/
     }
     
     public static void main(String[] args) {

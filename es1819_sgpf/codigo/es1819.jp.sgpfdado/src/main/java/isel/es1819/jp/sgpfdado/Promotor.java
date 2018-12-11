@@ -5,12 +5,39 @@
  */
 package isel.es1819.jp.sgpfdado;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
 /**
  *
  * @author pauloborges
  */
-public class Promotor {
+@Entity
+@Table(name = "PROMOTOR")
+public class Promotor extends BaseEntity {
+
+    @Column(name = "designacao")
+    private String designacao;
     
-    private String nome;
+    @Column(name = "nacionalidade")
     private String nacionalidade;
+
+    public String getNacionalidade() {
+        return nacionalidade;
+    }
+
+    public void setNacionalidade(String nacionalidade) {
+        this.nacionalidade = nacionalidade;
+    }
+
+    public String getDesignacao() {
+        return designacao;
+    }
+
+    public void setDesignacao(String designacao) {
+        this.designacao = designacao;
+    }
+    
+    
 }

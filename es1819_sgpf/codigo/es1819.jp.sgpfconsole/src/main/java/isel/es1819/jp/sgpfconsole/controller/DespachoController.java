@@ -9,20 +9,11 @@ package isel.es1819.jp.sgpfconsole.controller;
  *
  * @author pauloborges
  */
-public interface ProjetoController {
-
-    void aceitacaoCandidatura();
+public interface DespachoController {
     
-    void aberturaprojeto();
+    void despachoAberturaProjeto();
 
-    void alteracaoDadosProjeto();
-
-    void reativacaoProjeto();
-
-    void suspensaoProjeto();
-
-    void reforcoProjeto();
-
-    void relatorioInformacaoProjeto();
+    void despachoFinanciamento();
     
+    void despachoReforcoFinanciamento();
 }

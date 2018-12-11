@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package isel.es1819.jp.sgpfconsole.model;
+package isel.es1819.jp.sgpfdado.dao;
 
 /**
  *
  * @author pauloborges
  */
-public interface ProjetoModel {
+public class PagamentoDAO {
     
 }

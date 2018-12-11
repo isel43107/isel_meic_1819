@@ -5,10 +5,26 @@
  */
 package isel.es1819.jp.sgpfdado;
 
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
 /**
  *
  * @author pauloborges
  */
-public class ProjetoFinanciamentoIncentivo {
+@Entity
+@Table(name = "PROJETOFINANCIAMENTO_INCENTIVO")
+public class ProjetoFinanciamentoIncentivo extends ProjetoFinanciamento{
+    
+    private int numeroPrestacoes;
+
+    public int getNumeroPrestacoes() {
+        return numeroPrestacoes;
+    }
+
+    public void setNumeroPrestacoes(int numeroPrestacoes) {
+        this.numeroPrestacoes = numeroPrestacoes;
+    }
+    
     
 }

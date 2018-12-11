@@ -7,7 +7,8 @@
  */
 package isel.es1819.jp.sgpfconsole.view;
 
-import isel.es1819.jp.sgpfconsole.model.Projeto;
+import isel.es1819.jp.sgpfdado.ProjetoFinanciamento;
+
 
 /**
  *
@@ -16,12 +17,12 @@ import isel.es1819.jp.sgpfconsole.model.Projeto;
 public class ConsolaProjetoView implements ProjetoView {
 
     @Override
-    public void mostraRelatorioProjeto(Projeto projeto){}
+    public void mostraRelatorioProjeto(ProjetoFinanciamento projeto){}
     
     @Override
-    public void mostrarInformacaoProjeto(Projeto projeto){
+    public void mostrarInformacaoProjeto(ProjetoFinanciamento projeto){
         System.out.println("Projeto");
-        System.out.println("Numero: " + projeto.getNumero());
-        System.out.println("Tipo: " + projeto.getTipo());
+        System.out.println("Numero: " + projeto.getNumeroProjecto());
+        System.out.println("Tipo: " + projeto.getClass());
     }
 }

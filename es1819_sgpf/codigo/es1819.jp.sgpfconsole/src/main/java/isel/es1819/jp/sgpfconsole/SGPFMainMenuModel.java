@@ -7,8 +7,7 @@
  */
 package isel.es1819.jp.sgpfconsole;
 
-import isel.es1819.jp.sgpfconsole.controller.ConsolaProjetoController;
-import isel.es1819.jp.sgpfconsole.model.InMemoryProjetoModel;
+import isel.es1819.jp.sgpfconsole.controller.SgpfImpl;
 
 /**
  *
@@ -16,14 +15,17 @@ import isel.es1819.jp.sgpfconsole.model.InMemoryProjetoModel;
  */
 public class SGPFMainMenuModel {
     
-    ConsolaProjetoController proController;
+    SgpfImpl proController;
     
     //TODO Receber o controller no construtor
     public SGPFMainMenuModel(){
-        proController = new ConsolaProjetoController(new InMemoryProjetoModel());
+        proController = new SgpfImpl();
     }
 
     public void opcaoHandler(char opcao) {
+        
+        //TODO verificar a maquina de estado 
+        //
 
         switch (opcao) {
 
@@ -31,24 +33,37 @@ public class SGPFMainMenuModel {
                 proController.aceitacaoCandidatura();
                 break;
             case 'b':
+                proController.despachoAberturaProjeto();
                 break;
             case 'c':
+                proController.parecerTecnico();
                 break;
             case 'd':
+                // Devera processar o despacho de acordo com o numero de projeto
+                proController.despachoAberturaProjeto();
+                proController.despachoFinanciamento();
+                proController.despachoReforcoFinanciamento();
                 break;
             case 'e':
+                proController.suspensaoProjeto();
                 break;
             case 'f':
+                proController.reativacaoProjeto();
                 break;
             case 'g':
+                proController.reforcoProjeto();
                 break;
             case 'h':
+                proController.realizacaoPagamento();
                 break;
             case 'i':
+                proController.alteracaoDadosProjeto();
                 break;
             case 'j':
+                proController.relatorioInformacaoProjeto();
                 break;
             case 'k':
+                proController.relatorioPagamentoProjeto();
                 break;
 
             default:

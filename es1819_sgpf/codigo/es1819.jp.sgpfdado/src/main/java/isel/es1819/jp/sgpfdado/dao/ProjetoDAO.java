@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package isel.es1819.jp.sgpfconsole.view;
+package isel.es1819.jp.sgpfdado.dao;
 
 import isel.es1819.jp.sgpfdado.ProjetoFinanciamento;
 
@@ -11,10 +11,12 @@ import isel.es1819.jp.sgpfdado.ProjetoFinanciamento;
  *
  * @author pauloborges
  */
-public interface ProjetoView {
+public class ProjetoDAO extends BaseCrudDAO<ProjetoFinanciamento>{
 
-    void mostraRelatorioProjeto(ProjetoFinanciamento projeto);
+    @Override
+    protected Class<ProjetoFinanciamento> getEntityClass() {
+        return ProjetoFinanciamento.class;
+    }
 
-    void mostrarInformacaoProjeto(ProjetoFinanciamento projeto);
     
 }
