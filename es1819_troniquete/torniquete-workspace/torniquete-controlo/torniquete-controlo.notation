@@ -1,37 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/papyrus/infra/gmfdiag/style" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
-  <notation:Diagram xmi:id="_IvYrIMW5EeiBwILyf9Eznw" type="PapyrusUMLInteractionOverviewDiagram" name="InteractionOverviewDiagram" measurementUnit="Pixel">
-    <children xmi:type="notation:Shape" xmi:id="_IvYrIcW5EeiBwILyf9Eznw" type="Activity_Shape">
-      <children xmi:type="notation:DecorationNode" xmi:id="_IvYrIsW5EeiBwILyf9Eznw" type="Activity_NameLabel"/>
-      <children xmi:type="notation:DecorationNode" xmi:id="_IvYrI8W5EeiBwILyf9Eznw" type="Activity_KeywordLabel"/>
-      <children xmi:type="notation:BasicCompartment" xmi:id="_IvYrJMW5EeiBwILyf9Eznw" type="Activity_ParameterCompartment">
-        <styles xmi:type="notation:SortingStyle" xmi:id="_IvYrJcW5EeiBwILyf9Eznw"/>
-        <styles xmi:type="notation:FilteringStyle" xmi:id="_IvYrJsW5EeiBwILyf9Eznw"/>
-        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IvYrJ8W5EeiBwILyf9Eznw"/>
-      </children>
-      <children xmi:type="notation:BasicCompartment" xmi:id="_IvYrKMW5EeiBwILyf9Eznw" type="Activity_PreconditionCompartment">
-        <styles xmi:type="notation:SortingStyle" xmi:id="_IvYrKcW5EeiBwILyf9Eznw"/>
-        <styles xmi:type="notation:FilteringStyle" xmi:id="_IvYrKsW5EeiBwILyf9Eznw"/>
-        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IvYrK8W5EeiBwILyf9Eznw"/>
-      </children>
-      <children xmi:type="notation:BasicCompartment" xmi:id="_IvYrLMW5EeiBwILyf9Eznw" type="Activity_PostconditionCompartment">
-        <styles xmi:type="notation:SortingStyle" xmi:id="_IvYrLcW5EeiBwILyf9Eznw"/>
-        <styles xmi:type="notation:FilteringStyle" xmi:id="_IvYrLsW5EeiBwILyf9Eznw"/>
-        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IvYrL8W5EeiBwILyf9Eznw"/>
-      </children>
-      <children xmi:type="notation:BasicCompartment" xmi:id="_IvYrMMW5EeiBwILyf9Eznw" type="Activity_ActivityNodeCompartment">
-        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IvYrMcW5EeiBwILyf9Eznw"/>
-      </children>
-      <element xmi:type="uml:Activity" href="torniquete-controlo.uml#_ESY7YMW5EeiBwILyf9Eznw"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IvYrMsW5EeiBwILyf9Eznw"/>
-    </children>
-    <styles xmi:type="notation:StringValueStyle" xmi:id="_IvYrM8W5EeiBwILyf9Eznw" name="diagram_compatibility_version" stringValue="1.4.0"/>
-    <styles xmi:type="notation:DiagramStyle" xmi:id="_IvYrNMW5EeiBwILyf9Eznw"/>
-    <styles xmi:type="style:PapyrusDiagramStyle" xmi:id="_IvYrNcW5EeiBwILyf9Eznw" diagramKindId="org.eclipse.papyrus.uml.diagram.interactionOverview">
-      <owner xmi:type="uml:Model" href="torniquete-controlo.uml#_JrdIQMWtEei5aZMpSuBy9Q"/>
-    </styles>
-    <element xmi:type="uml:Activity" href="torniquete-controlo.uml#_ESY7YMW5EeiBwILyf9Eznw"/>
-  </notation:Diagram>
   <notation:Diagram xmi:id="_ho5iYMW5EeiBwILyf9Eznw" type="PapyrusUMLSequenceDiagram" name="sd: Torniquete - Diagrama Geral" measurementUnit="Pixel">
     <children xmi:type="notation:Shape" xmi:id="_ho5iYcW5EeiBwILyf9Eznw" type="Interaction_Shape">
       <children xmi:type="notation:DecorationNode" xmi:id="_ho5iYsW5EeiBwILyf9Eznw" type="Interaction_NameLabel"/>
@@ -172,7 +140,7 @@
           <children xmi:type="notation:BasicCompartment" xmi:id="_D2YDCNe7EeiwE9exk1yxkQ" type="Region_SubvertexCompartment">
             <children xmi:type="notation:Shape" xmi:id="_V-_3ANhEEeiCQdV-49bKQQ" type="Pseudostate_InitialShape">
               <children xmi:type="notation:DecorationNode" xmi:id="_V_BFINhEEeiCQdV-49bKQQ" type="Pseudostate_InitialFloatingNameLabel">
-                <layoutConstraint xmi:type="notation:Location" xmi:id="_V_BsMNhEEeiCQdV-49bKQQ" x="25" y="3"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_V_BsMNhEEeiCQdV-49bKQQ" x="-16" y="16"/>
               </children>
               <children xmi:type="notation:DecorationNode" xmi:id="_V_BsMdhEEeiCQdV-49bKQQ" type="Pseudostate_InitialStereotypeLabel">
                 <layoutConstraint xmi:type="notation:Location" xmi:id="_V_BsMthEEeiCQdV-49bKQQ" x="25" y="-10"/>
@@ -266,7 +234,7 @@
                         <layoutConstraint xmi:type="notation:Location" xmi:id="_O0b4VdhFEeiCQdV-49bKQQ" x="25" y="-10"/>
                       </children>
                       <element xmi:type="uml:Pseudostate" href="torniquete-controlo.uml#_O0PrENhFEeiCQdV-49bKQQ"/>
-                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_O0b4UdhFEeiCQdV-49bKQQ" x="59" y="4"/>
+                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_O0b4UdhFEeiCQdV-49bKQQ" x="19" y="4"/>
                     </children>
                     <children xmi:type="notation:Shape" xmi:id="_CB0sANhGEeiCQdV-49bKQQ" type="Pseudostate_ShallowHistoryShape">
                       <children xmi:type="notation:DecorationNode" xmi:id="_CB1TENhGEeiCQdV-49bKQQ" type="Pseudostate_ShallowHistoryFloatingNameLabel">
@@ -365,7 +333,7 @@
     <edges xmi:type="notation:Connector" xmi:id="_bzSJ0NhEEeiCQdV-49bKQQ" type="Transition_Edge" source="_V-_3ANhEEeiCQdV-49bKQQ" target="_Xjd6cNhEEeiCQdV-49bKQQ">
       <children xmi:type="notation:DecorationNode" xmi:id="_bzVNINhEEeiCQdV-49bKQQ" type="Transition_NameLabel">
         <styles xmi:type="notation:BooleanValueStyle" xmi:id="_AxDyQNhHEeiCQdV-49bKQQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_bzVNIdhEEeiCQdV-49bKQQ"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_bzVNIdhEEeiCQdV-49bKQQ" x="-3" y="5"/>
       </children>
       <children xmi:type="notation:DecorationNode" xmi:id="_bzVNIthEEeiCQdV-49bKQQ" type="Transition_GuardLabel">
         <styles xmi:type="notation:BooleanValueStyle" xmi:id="_AxUQ8NhHEeiCQdV-49bKQQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
@@ -378,7 +346,7 @@
       <styles xmi:type="notation:FontStyle" xmi:id="_bzSJ0dhEEeiCQdV-49bKQQ"/>
       <element xmi:type="uml:Transition" href="torniquete-controlo.uml#_bukB4NhEEeiCQdV-49bKQQ"/>
       <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_bzSJ0thEEeiCQdV-49bKQQ" points="[77, 90, -643984, -643984]$[230, 90, -643984, -643984]"/>
-      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_b0Mv0NhEEeiCQdV-49bKQQ" id="(0.9,0.3)"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_b0Mv0NhEEeiCQdV-49bKQQ" id="(0.8,0.8)"/>
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_b0Mv0dhEEeiCQdV-49bKQQ" id="(0.0,0.24793388429752067)"/>
     </edges>
     <edges xmi:type="notation:Connector" xmi:id="_T1Hj8NhFEeiCQdV-49bKQQ" type="Transition_Edge" source="_O0b4UNhFEeiCQdV-49bKQQ" target="_BXmfwNhFEeiCQdV-49bKQQ">
@@ -457,7 +425,7 @@
       </children>
       <children xmi:type="notation:DecorationNode" xmi:id="_sEqRIthFEeiCQdV-49bKQQ" type="Transition_GuardLabel">
         <styles xmi:type="notation:BooleanValueStyle" xmi:id="_tUJjENhFEeiCQdV-49bKQQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_sEqRI9hFEeiCQdV-49bKQQ"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_sEqRI9hFEeiCQdV-49bKQQ" x="-9" y="-5"/>
       </children>
       <children xmi:type="notation:DecorationNode" xmi:id="_sEqRJNhFEeiCQdV-49bKQQ" type="Transition_StereotypeLabel">
         <styles xmi:type="notation:BooleanValueStyle" xmi:id="_tUYMkNhFEeiCQdV-49bKQQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
@@ -479,7 +447,7 @@
       </children>
       <children xmi:type="notation:DecorationNode" xmi:id="_2H2NVdhFEeiCQdV-49bKQQ" type="Transition_GuardLabel">
         <styles xmi:type="notation:BooleanValueStyle" xmi:id="_4AkpgNhFEeiCQdV-49bKQQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_2H2NVthFEeiCQdV-49bKQQ"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_2H2NVthFEeiCQdV-49bKQQ" x="6" y="5"/>
       </children>
       <children xmi:type="notation:DecorationNode" xmi:id="_2H2NV9hFEeiCQdV-49bKQQ" type="Transition_StereotypeLabel">
         <styles xmi:type="notation:BooleanValueStyle" xmi:id="_4Ayr8NhFEeiCQdV-49bKQQ" name="IS_UPDATED_POSITION" booleanValue="true"/>

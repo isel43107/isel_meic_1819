@@ -64,7 +64,7 @@ public class TorniqueteSMCommands {
 	@ShellMethod(key = "sm-evento", value = "Enviar um evento para a maquina de estado")
 	public String event(final Events event) {
 		getStateMachine().sendEvent(event);
-		return "Evento " + event + " enviado";
+		return "Enviar evento: " + event;
 	}
 
 }

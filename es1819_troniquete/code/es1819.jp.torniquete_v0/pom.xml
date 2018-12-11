@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>isel.es1819.jp</groupId>
-    <artifactId>es1819.jp.torniquete</artifactId>
+    <artifactId>es1819.jp.torniquete_v0</artifactId>
     <version>1.0.0</version>
     <packaging>jar</packaging>
     <properties>
@@ -14,9 +14,9 @@
     
     <dependencies>
         <dependency>
-            <groupId>com.lympid</groupId>
-            <artifactId>lympid-core</artifactId>
-            <version>0.9.1</version>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>23.0</version>
         </dependency>
         
         <dependency>
@@ -26,4 +26,5 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+    <name>es1819.jp.torniquete_v0</name>
 </project>

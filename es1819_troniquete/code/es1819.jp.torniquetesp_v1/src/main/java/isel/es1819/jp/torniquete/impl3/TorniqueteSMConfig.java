@@ -35,9 +35,9 @@ public class TorniqueteSMConfig
     public void configure(StateMachineConfigurationConfigurer<States, Events> config)
             throws Exception {
         config
-                .withConfiguration()
-                .autoStartup(true)
-                .listener(listener());
+        .withConfiguration()
+        .autoStartup(true)
+        .listener(listener());
     }
 
     @Override
