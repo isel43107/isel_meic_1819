@@ -1,0 +1,136 @@
+= ICM1819 - Auction System 
+
+Leição 
+
+== Funcionalidades
+
+* ver produtos em Leilão 
+
+
+== Funcionalidade registro 
+* Mecanismo de validação: Enviar email com link: example.com/registro/validate/{token} 
+
+
+== Funções por Utilizador 
+
+* Edit os seus dados ()
+
+* Eliminar Produto 
+* Editar Produto 
+* Adiciona Produto 
+* Os meu produtos no leião 
+** Lista Produtos para venda 
+** Lista Produtos vendidos 
+
+* Minhas Ofertas (Lances, Licitações) 
+** Ver Ofertas Ganhas -  
+** ver Ofertas Feitas 
+
+== Utilizador 
+
+* nome de login (username): pborges
+* senha: senha-super-dificil
+* Nome Completo: Paulo Borges
+* email: pborges@example.com 
+* ... Outros contactos: Telefone, Morada
+
+
+== Produtos 
+
+* Codigo de ID;
+* descrição 
+* preço minino de venda (VALOR_MINIMO) - Não é visivel site 
+* prazo de licitação (FIM_LICITACAO)
+* Modeo de Adjudicação 
+* ... informação: Image, video, 
+* ... Clipe: Video, Audio 
+
+
+== Modo de Adjudicação (Metodo de Premiação)
+
+Metodo de ganhar o leilão 
+
+* 1) Conceder o ganho ao primeiro lance com valor >= VALOR_MINIMO
+* 2) Apos FIM_LICITACAO, ganha que o melhor lance (deve ser >= VALOR_MINIMO)
+
+== Premio (Ganhar Leião) 
+
+* 1) Enviar um email ao vendedor com
+** contato do comprador, identificação do produto, valor do premio 
+* 2) Enviar um email ao comprador com: 
+** Contacto do vendedor, identificação do produto, valor do premio 
+
+
+== Interface utilizador 
+
+* Pagina Login/Logout {USER}
+* Registro de utilizador {ANONIMO}
+* Removação do utilizador {ADMIN}
+
+* PAGINA - Opção para mostra produtos para venda 
+* PAGINA - Opção pesquisar e ver ofertas ja feitas 
+
+* WEKSOCKET (Tempo Real) - utilizador seleciona or produto a monitorizar 
+* Mostrar os produtos em leilão e o valor atual da licitação; 
+* Opções extas que achar necessario 
+
+== Modelo de Negocio 
+
+
+== Suport B2B 
+
+* Webervice 
+* Cliente (Empresa)
+
+
+== FUnç~es via Webservice 
+
+* Recebe informação sobre produtos vendidos, Contatos dos compradore
+* Outras funções necessarias para funcionamento no modelo B2B 
+
+* TLS 
+* Token - Duração pequeno (10 Minutos)
+
+
+== Registar Empresa ()
+
+** Utilizadores da Empresa (tipo: Funcionrio)
+* Nome utilizador
+* ROLES (Direitos/Funções) 
+
+== Cliente WebService 
+
+* Console (Linha commando)
+
+== Implanta~\ao do Produto 
+
+* amazon.com/en/ec2/pricing 
+* 1 Ano 
+* 1 Processador 
+* 1 Giga Storage 
+* Tomcat 
+* PostgreSQL 
+
+
+== Entregar 
+
+* Relatorio Tecnico 
+* Script SQL 
+* Web (Auction-System.WAR)
+
+
+
+== Ferramentas
+
+* Pencil (Criar Mockup)
+* 
+
+
+== Design 
+
+* Mockup 
+* Protitipo 
+
+== Referencia 
+* oportunityleiloes.com/pt 
+* 
