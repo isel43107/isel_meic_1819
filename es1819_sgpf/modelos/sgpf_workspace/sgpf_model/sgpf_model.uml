@@ -17,7 +17,9 @@
       <packagedElement xmi:type="uml:Class" xmi:id="_hnAH0PplEeiHDuF8B8XG5g" name="Incentivo">
         <generalization xmi:type="uml:Generalization" xmi:id="_0vRjwPpmEeiHDuF8B8XG5g" general="_eI96sPplEeiHDuF8B8XG5g"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="__ZY9EPpmEeiHDuF8B8XG5g" name="Despacho"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="__ZY9EPpmEeiHDuF8B8XG5g" name="Despacho">
+        <generalization xmi:type="uml:Generalization" xmi:id="_KZ_HEPy0Eei5HdqpBVYUgA" general="_BLHjwPy0Eei5HdqpBVYUgA"/>
+      </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_BU_HEPpnEeiHDuF8B8XG5g" name="DespachoFinanciamento">
         <generalization xmi:type="uml:Generalization" xmi:id="_75CmUPpnEeiHDuF8B8XG5g" general="__ZY9EPpmEeiHDuF8B8XG5g"/>
       </packagedElement>
@@ -27,14 +29,96 @@
       <packagedElement xmi:type="uml:Class" xmi:id="_FQy1UPpnEeiHDuF8B8XG5g" name="DespachoAbertura">
         <generalization xmi:type="uml:Generalization" xmi:id="_FxfSIPpoEeiHDuF8B8XG5g" general="__ZY9EPpmEeiHDuF8B8XG5g"/>
       </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_AouYYPrzEeiHDuF8B8XG5g" name="Historico">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_yYJR4Pr2EeiHDuF8B8XG5g" name="evento" visibility="public"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_0HZpAPr2EeiHDuF8B8XG5g" name="estadoAnterior" visibility="public"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_8rns0Pr2EeiHDuF8B8XG5g" name="estadoActual" visibility="public"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_HNl2wPr3EeiHDuF8B8XG5g" name="acao" visibility="public"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_JfIbkPr3EeiHDuF8B8XG5g" name="utilizador" visibility="public"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_NsuhcPx4Eei5HdqpBVYUgA" name="dataExecucao" visibility="public"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_h4gnAPy0Eei5HdqpBVYUgA" name="documento" visibility="public"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_3T5ZQPyuEei5HdqpBVYUgA" name="Reforco">
+        <generalization xmi:type="uml:Generalization" xmi:id="_LGK3oPy0Eei5HdqpBVYUgA" general="_BLHjwPy0Eei5HdqpBVYUgA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_F_8-APyvEei5HdqpBVYUgA" name="Promotor"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_HoCWIPyvEei5HdqpBVYUgA" name="ResponsavelContato"/>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_bJ06wPyvEei5HdqpBVYUgA" name="TipoUtilizador">
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_fepl8PyvEei5HdqpBVYUgA" name="TECNICO"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_gbisAPyvEei5HdqpBVYUgA" name="GESTOR_FINANCIAMENTO"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_jOSgcPyvEei5HdqpBVYUgA" name="COMISAO"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_X9_7IPyzEei5HdqpBVYUgA" name="ParecerTecnico">
+        <generalization xmi:type="uml:Generalization" xmi:id="_JQQe4Py0Eei5HdqpBVYUgA" general="_BLHjwPy0Eei5HdqpBVYUgA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_1vOIMPyzEei5HdqpBVYUgA" name="Utilizador"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_BLHjwPy0Eei5HdqpBVYUgA" name="Documento"/>
     </packagedElement>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Activity" xmi:id="_ES0cEPplEeiHDuF8B8XG5g" name="Activity4"/>
-  <packagedElement xmi:type="uml:Class" xmi:id="_AouYYPrzEeiHDuF8B8XG5g" name="Historico">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_yYJR4Pr2EeiHDuF8B8XG5g" name="evento" visibility="public"/>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_0HZpAPr2EeiHDuF8B8XG5g" name="estadoAtual" visibility="public"/>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_8rns0Pr2EeiHDuF8B8XG5g" name="estadoProximo" visibility="public"/>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_HNl2wPr3EeiHDuF8B8XG5g" name="acao" visibility="public"/>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_JfIbkPr3EeiHDuF8B8XG5g" name="utilizador" visibility="public"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_QMKpQPyBEei5HdqpBVYUgA" name="MaquinaEstados">
+      <packagedElement xmi:type="uml:StateMachine" xmi:id="_Se3rsPyBEei5HdqpBVYUgA" name="Suspender">
+        <region xmi:type="uml:Region" xmi:id="_WoQi8PyBEei5HdqpBVYUgA" name="Region1">
+          <transition xmi:type="uml:Transition" xmi:id="_X4-SAPyDEei5HdqpBVYUgA" source="_LDv2kPyEEei5HdqpBVYUgA" target="_7viXkPyBEei5HdqpBVYUgA"/>
+          <transition xmi:type="uml:Transition" xmi:id="_qB0RQPyEEei5HdqpBVYUgA" source="_bIrSwPyEEei5HdqpBVYUgA" target="_9KUeEPyCEei5HdqpBVYUgA"/>
+          <transition xmi:type="uml:Transition" xmi:id="_CzC88PyKEei5HdqpBVYUgA" source="_yqflAPyJEei5HdqpBVYUgA" target="__80WsPyJEei5HdqpBVYUgA"/>
+          <transition xmi:type="uml:Transition" xmi:id="_VuJ8EPyKEei5HdqpBVYUgA" source="_nUNpQPyJEei5HdqpBVYUgA" target="_Yjm_4PyCEei5HdqpBVYUgA"/>
+          <transition xmi:type="uml:Transition" xmi:id="_o5lPIPyKEei5HdqpBVYUgA" name="SuspenderAnaliseTecnica" source="_7viXkPyBEei5HdqpBVYUgA" target="_yqflAPyJEei5HdqpBVYUgA"/>
+          <transition xmi:type="uml:Transition" xmi:id="_r2sggPyKEei5HdqpBVYUgA" name="SuspenderCandidatura" source="_x0Dl4PyBEei5HdqpBVYUgA" target="_yqflAPyJEei5HdqpBVYUgA"/>
+          <transition xmi:type="uml:Transition" xmi:id="_uRuYgPyKEei5HdqpBVYUgA" name="SuspenderPagamento" source="_Yjm_4PyCEei5HdqpBVYUgA" target="_yqflAPyJEei5HdqpBVYUgA"/>
+          <transition xmi:type="uml:Transition" xmi:id="_tgdeMPyLEei5HdqpBVYUgA" source="_rVnXQPyLEei5HdqpBVYUgA" target="_uXreQPyEEei5HdqpBVYUgA"/>
+          <transition xmi:type="uml:Transition" xmi:id="_UE_T8PyMEei5HdqpBVYUgA" source="_uij7wPyIEei5HdqpBVYUgA" target="_9KUeEPyCEei5HdqpBVYUgA"/>
+          <transition xmi:type="uml:Transition" xmi:id="_2_0fIPyMEei5HdqpBVYUgA" source="_qx-pQPyMEei5HdqpBVYUgA" target="_AMD3IPyLEei5HdqpBVYUgA"/>
+          <transition xmi:type="uml:Transition" xmi:id="__vMDAPyMEei5HdqpBVYUgA" name="Reenquadrar" source="_9KUeEPyCEei5HdqpBVYUgA" target="_qx-pQPyMEei5HdqpBVYUgA"/>
+          <transition xmi:type="uml:Transition" xmi:id="_jgIW0PyNEei5HdqpBVYUgA" source="_ha_PQPyNEei5HdqpBVYUgA" target="_x0Dl4PyBEei5HdqpBVYUgA"/>
+          <transition xmi:type="uml:Transition" xmi:id="_t7JAUPyREei5HdqpBVYUgA" source="_uXreQPyEEei5HdqpBVYUgA" target="_FTM90PyQEei5HdqpBVYUgA"/>
+          <transition xmi:type="uml:Transition" xmi:id="_vrBCgPyREei5HdqpBVYUgA" source="_Yjm_4PyCEei5HdqpBVYUgA" target="_FTM90PyQEei5HdqpBVYUgA"/>
+          <transition xmi:type="uml:Transition" xmi:id="_Lc2KsPySEei5HdqpBVYUgA" source="_FTM90PyQEei5HdqpBVYUgA" target="__80WsPyJEei5HdqpBVYUgA"/>
+          <subvertex xmi:type="uml:State" xmi:id="_x0Dl4PyBEei5HdqpBVYUgA" name="Candidatura">
+            <connectionPoint xmi:type="uml:Pseudostate" xmi:id="_LDv2kPyEEei5HdqpBVYUgA" kind="exitPoint"/>
+            <connectionPoint xmi:type="uml:Pseudostate" xmi:id="_bIrSwPyEEei5HdqpBVYUgA" kind="exitPoint"/>
+            <connectionPoint xmi:type="uml:Pseudostate" xmi:id="_qx-pQPyMEei5HdqpBVYUgA" name="Entrada" kind="entryPoint"/>
+            <region xmi:type="uml:Region" xmi:id="_s9H2sfyCEei5HdqpBVYUgA" name="Region1">
+              <transition xmi:type="uml:Transition" xmi:id="_X5O7QPyEEei5HdqpBVYUgA" name="Enquadra" source="_s9MvMPyCEei5HdqpBVYUgA" target="_OO-nAPyFEei5HdqpBVYUgA"/>
+              <transition xmi:type="uml:Transition" xmi:id="_fhBzEPyEEei5HdqpBVYUgA" name="NaoEnquadra" source="_s9MvMPyCEei5HdqpBVYUgA" target="_bIrSwPyEEei5HdqpBVYUgA"/>
+              <transition xmi:type="uml:Transition" xmi:id="_OrXyoPyGEei5HdqpBVYUgA" name="Aprovado" source="_OO-nAPyFEei5HdqpBVYUgA" target="_LDv2kPyEEei5HdqpBVYUgA"/>
+              <transition xmi:type="uml:Transition" xmi:id="_JNVnMPyHEei5HdqpBVYUgA" source="_GhDnIPyHEei5HdqpBVYUgA" target="_s9MvMPyCEei5HdqpBVYUgA"/>
+              <subvertex xmi:type="uml:State" xmi:id="_s9MvMPyCEei5HdqpBVYUgA" name="Aceitação Projeto"/>
+              <subvertex xmi:type="uml:State" xmi:id="_OO-nAPyFEei5HdqpBVYUgA" name="DespachoAbertura"/>
+              <subvertex xmi:type="uml:Pseudostate" xmi:id="_GhDnIPyHEei5HdqpBVYUgA" name="Inicio"/>
+              <subvertex xmi:type="uml:Pseudostate" xmi:id="_AMD3IPyLEei5HdqpBVYUgA" name="SH13" kind="shallowHistory"/>
+            </region>
+          </subvertex>
+          <subvertex xmi:type="uml:State" xmi:id="_7viXkPyBEei5HdqpBVYUgA" name="AnaliseTecnica">
+            <connectionPoint xmi:type="uml:Pseudostate" xmi:id="_uij7wPyIEei5HdqpBVYUgA" kind="exitPoint"/>
+            <connectionPoint xmi:type="uml:Pseudostate" xmi:id="_nUNpQPyJEei5HdqpBVYUgA" name="" kind="exitPoint"/>
+            <region xmi:type="uml:Region" xmi:id="_8cOsMfyGEei5HdqpBVYUgA" name="Region1">
+              <transition xmi:type="uml:Transition" xmi:id="_ADTrIPyIEei5HdqpBVYUgA" source="_cIlJMPyHEei5HdqpBVYUgA" target="_8cP6UPyGEei5HdqpBVYUgA"/>
+              <transition xmi:type="uml:Transition" xmi:id="_bgZ5cPyIEei5HdqpBVYUgA" name="Favoravel" source="_8cP6UPyGEei5HdqpBVYUgA" target="_LwV6APyIEei5HdqpBVYUgA"/>
+              <transition xmi:type="uml:Transition" xmi:id="_xvl4cPyIEei5HdqpBVYUgA" name="NaoFavoravel" source="_8cP6UPyGEei5HdqpBVYUgA" target="_uij7wPyIEei5HdqpBVYUgA"/>
+              <transition xmi:type="uml:Transition" xmi:id="_QK6ycPyJEei5HdqpBVYUgA" name="Rejeitado" source="_LwV6APyIEei5HdqpBVYUgA" target="_WLpl8P_jEeirNMFPIDYQ4w"/>
+              <transition xmi:type="uml:Transition" xmi:id="_tiUKQPyJEei5HdqpBVYUgA" name="Aprovado" source="_LwV6APyIEei5HdqpBVYUgA" target="_nUNpQPyJEei5HdqpBVYUgA"/>
+              <transition xmi:type="uml:Transition" xmi:id="_LFla4PyKEei5HdqpBVYUgA" name="TransformarBonificacao" source="_LwV6APyIEei5HdqpBVYUgA" target="_nUNpQPyJEei5HdqpBVYUgA"/>
+              <subvertex xmi:type="uml:State" xmi:id="_8cP6UPyGEei5HdqpBVYUgA" name="ParecerTecnico"/>
+              <subvertex xmi:type="uml:Pseudostate" xmi:id="_cIlJMPyHEei5HdqpBVYUgA" name="Inicio"/>
+              <subvertex xmi:type="uml:State" xmi:id="_LwV6APyIEei5HdqpBVYUgA" name="DespachoFinanciamento"/>
+              <subvertex xmi:type="uml:Pseudostate" xmi:id="_SzE1kPyLEei5HdqpBVYUgA" name="SH14" kind="shallowHistory"/>
+            </region>
+          </subvertex>
+          <subvertex xmi:type="uml:State" xmi:id="_Yjm_4PyCEei5HdqpBVYUgA" name="Pagamento">
+            <connectionPoint xmi:type="uml:Pseudostate" xmi:id="_rVnXQPyLEei5HdqpBVYUgA" name="FimPagamento" kind="exitPoint"/>
+          </subvertex>
+          <subvertex xmi:type="uml:State" xmi:id="_9KUeEPyCEei5HdqpBVYUgA" name="Arquivado"/>
+          <subvertex xmi:type="uml:State" xmi:id="_uXreQPyEEei5HdqpBVYUgA" name="Fechado"/>
+          <subvertex xmi:type="uml:State" xmi:id="_yqflAPyJEei5HdqpBVYUgA" name="Suspenso"/>
+          <subvertex xmi:type="uml:Pseudostate" xmi:id="__80WsPyJEei5HdqpBVYUgA" name="DeepHistory" kind="deepHistory"/>
+          <subvertex xmi:type="uml:Pseudostate" xmi:id="_ha_PQPyNEei5HdqpBVYUgA" name="Inicio"/>
+          <subvertex xmi:type="uml:State" xmi:id="_FTM90PyQEei5HdqpBVYUgA" name="ReforcoFinanciamento">
+            <region xmi:type="uml:Region" xmi:id="_YsBMovyQEei5HdqpBVYUgA" name="Region1">
+              <subvertex xmi:type="uml:State" xmi:id="_YsCawPyQEei5HdqpBVYUgA" name="DespachoReforcoFinanciamento"/>
+            </region>
+          </subvertex>
+          <subvertex xmi:type="uml:State" xmi:id="_WLpl8P_jEeirNMFPIDYQ4w" name="Rejeitado"/>
+        </region>
+      </packagedElement>
+    </packagedElement>
   </packagedElement>
 </uml:Model>

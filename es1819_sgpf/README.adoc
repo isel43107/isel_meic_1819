@@ -103,6 +103,43 @@ k. Relatorio de pagamentos por projecto;
 ** Diagramas de Pacotes(Package Diagrams)
 
 
+== Tabela transição Estado 
+
+|====
+|Evento |Estado Actual |proximo Estado
+|PROJETO_ENQUADRA |CANDIDATURA |ABERTO
+|PROJETO_NAO_ENQUADRA |CANDIDATURA |ARQUIVADO
+|DESPACHO_ABERTURA_APROVADO |ABERTO |ANALISE_TECNICA
+|DESPACHO_ABERTURA_REJEITADO |ABERTO |ARQUIVADO
+|PARECER_TECNICO_FAVORAVEL |ANALISE_TECNICA |DESPACHO_FINANCIAMENTO
+|PARECER_TECNICO_NAO_FAVORAVEL |ANALISE_TECNICA |ARQUIVADO
+|DESPACHO_FINANCIAMENTO_APROVADO |DESPACHO_FINANCIAMENTO |PAGAMENTO
+|DESPACHO_FINANCIAMENTO_REJEITADO |DESPACHO_FINANCIAMENTO |ARQUIVADO
+|DESPACHO_FINANCIAMENTO_TRANFOR_BONIF |DESPACHO_FINANCIAMENTO |PAGAMENTO
+|REALIZAR_REFORCO |PAGEMENTO |REFORCO
+|REALIZAR_REFORCO |FECHADO |REFORCO
+|DEPACHO_REFORCO_APROVADO |REFORCO |PAGAMENTO
+|DEPACHO_REFORCO_REJEITADO |REFORCO | (*DEEP_HISTORY: PAG or FEC)
+|REENQUADRAR |ARQUIVADO |CANDIDATURA
+|====
+
+
+=== Incentivo
+* Custo elegível e o montante de financiamento.
+
+=== Bonificação 
+* definido um período de bonificação, a taxa de bonificação, e o montante máximo de bonificação.
+
+=== Pagamento 
+* O pagamento só pode ser efectuado após a verificação do prazo de validade e do limite de financiamento estabelecido para o projecto.
+
+== ST - transição 
+
+* kinf: Internal, Local, External
+* Trigger
+* Guard 
+* Effect
+
 == Referencias
 
 * https://www.youtube.com/watch?v=5CwEqJB3c5g[Engenharia de Software - Rational Unified Process (RUP)]
