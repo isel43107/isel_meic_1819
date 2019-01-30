@@ -6,7 +6,6 @@
 package security;
 
 import java.security.Principal;
-import java.util.Collection;
 
 /**
  *

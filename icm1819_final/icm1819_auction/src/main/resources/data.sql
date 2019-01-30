@@ -51,3 +51,24 @@ projectoValor, projectoPromotorNome, projectoPromotorEmail, projectoStatus)
 values (8, 'p1008', 'Network to combine carpooling with public transport options',
 'The EU-funded project SocialCar is developing an urban networking service allowing travellers to combine public transport with car sharing offers to plan trips. The aim is to offer travellers more options and reduce urban congestion.',
 2000000.0,  'Pedro F', 'pedro@daw.isel', 'CANDIDATURA');
+
+
+insert into projecto (projectoid, projectocodigo, projectoNome, projectodescription,
+projectoValor, projectoPromotorNome, projectoPromotorEmail, projectoStatus) 
+values (9, 'p-2019-01', 'HiPEAC Vision 2019: the future of computing',
+'The EU-funded project HiPEAC has released its annual vision report, which analyses the challenges that the computing sector faces and how technologies will evolve in the future. https://www.hipeac.net/vision/#/',
+2040000.0,  'Pedro F', 'pedro@daw.isel', 'CANDIDATURA');
+
+
+insert into projecto (projectoid, projectocodigo, projectoNome, projectodescription,
+projectoValor, projectoPromotorNome, projectoPromotorEmail, projectoStatus) 
+values (10, 'p-2019-02', 'SniffPhone Smartphone-aided Disease Detection from Exhaled Breath',
+'SniffPhone, an EU funded project to develop a compact handheld device that measures exhaled breath for early diagnosis of cancer, has received the Innovation Award at EFECS2018 - the European Forum for Electronic Components and Systems in Lisbon.',
+2040000.0,  'Pedro F', 'pedro@daw.isel', 'CANDIDATURA');
+
+
+insert into projecto (projectoid, projectocodigo, projectoNome, projectodescription,
+projectoValor, projectoPromotorNome, projectoPromotorEmail, projectoStatus) 
+values (11, 'p-2019-03', 'CPSELabs Boosting water efficiency with smart meters and sensors',
+'SniffPhone, What if sensors in your pipelines could help you save water and reduce your bills? That is what the Spanish company A-cing and the Digital Innovation Hub of the Technical University of Madrid have developed within the European project CPSELabs.',
+2040000.0,  'Pedro F', 'pedro@daw.isel', 'CANDIDATURA');

@@ -1,8 +1,6 @@
 package security;
 
-import java.util.Collection;
 import java.util.List;
-import org.springframework.util.StringUtils;
 import domain.entity.User;
 
 public class CustomUserDetails extends domain.entity.User {

@@ -11,7 +11,7 @@
           <div class="row">
 
             <!--
-            <jsp:include page="../fragments/bodyDashboardSideBar.jsp"/>
+            <jsp:include page="./fragments/bodyDashboardSideBar.jsp"/>
             -->
 
             <div class="col-sm-9 col-md-10 col-md-offset-2">

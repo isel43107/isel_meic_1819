@@ -7,8 +7,6 @@ package web.portal.controller;
 
 import domain.entity.Projecto;
 import domain.repository.ProjectoRepository;
-import java.util.ArrayList;
-import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -100,15 +98,16 @@ public class ProjectosController {
     public String listarProjectosPage(Pageable pageable, Model model) {
         Page<Projecto> projectos = projectoRepository.findAll(pageable);
 
+        int pageSize = pageable.getPageSize();
         int current = projectos.getNumber() + 1;
-        int begin = Math.max(1, current - 5);
-        int end = Math.min(begin + 10, projectos.getTotalPages());
+        int begin = Math.max(1, current * pageSize);
+        int end = Math.min(begin + pageSize, projectos.getTotalPages());
 
         model.addAttribute("projectos", projectos.getContent());
-        model.addAttribute("beginIndex", begin);
-        model.addAttribute("endIndex", end);
-        model.addAttribute("currentIndex", current);
-        model.addAttribute("totalPages", projectos.getTotalPages());
+        model.addAttribute("beginIndex", begin);                        //paginBeginIndex
+        model.addAttribute("endIndex", end);                            //paginEndIndex
+        model.addAttribute("currentIndex", current);                    //paginCurrentIndex
+        model.addAttribute("totalPages", projectos.getTotalPages());    //paginTotalPages
 
         return "projectos/listar_projectos_1";
     }

@@ -1,0 +1,207 @@
+
+/* index.scss */
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700");
+html {
+    font-size: 14px;
+    font-family: 'Lato', sans-serif; }
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    background-color: #E9ECEE;
+    color: #373A3C; 
+}
+
+ul {
+    list-style-type: disc;
+    list-style-position: inside;
+    margin-left: -15px; 
+}
+
+ol {
+    list-style-type: decimal;
+    list-style-position: inside;
+    margin-left: -15px; 
+}
+
+
+/* LoginPage.scss */
+.login .topbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5rem;
+    background: #1a242f; 
+}
+
+.login .topbar-logo-link {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 100%;
+    margin-left: 3.40rem; 
+}
+.login .topbar-logo-link:hover {
+    opacity: 0.8; }
+
+.login .topbar-logo {
+    width: auto;
+    height: 1.60rem; 
+}
+
+.login .form-container {
+    max-width: 44.30rem;
+    background-color: white;
+    margin-top: 7.15rem;
+    margin-bottom: 2.15rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2.40rem 5.70rem; 
+}
+
+.login .form-title {
+    margin-top: 0.30rem;
+    margin-bottom: 3.15rem;
+    font-weight: 200;
+    font-size: 2.70rem;
+    line-height: 2.70rem;
+    color: #373A3C;
+    text-align: center; }
+
+.login .form-item {
+    margin: 0.70rem 0; 
+}
+
+.login .form-label {
+    width: 25%; }
+
+.login .form-text-input {
+    padding: 0 1.15rem;
+    color: #495057;
+    background-color: #fff;
+    background-image: none;
+    background-clip: padding-box;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    width: 75%;
+    height: 2.70rem; 
+}
+.login .form-text-input::-webkit-input-placeholder {
+    color: #999999; 
+}
+.login .form-text-input:-ms-input-placeholder {
+    color: #999999; 
+}
+.login .form-text-input::placeholder {
+    color: #999999; 
+}
+
+.login .form-submit {
+    display: block;
+    border-radius: 0.30rem;
+    font-size: 1.30rem;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    border-width: 1px;
+    border-style: solid;
+    height: 2.80rem;
+    width: 11.40rem;
+    margin: 2.85rem auto; 
+}
+.login .form-submit[disabled] {
+    cursor: default; 
+}
+
+/* Login /components/Form.scss */
+.form-container .body {
+    padding: 2.39rem;
+    background-color: white;
+    margin: 1.40rem 0; 
+}
+
+.form-container .form-title {
+    font-weight: 700;
+    color: #999999; 
+}
+
+.form-container .footer {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    margin-top: 0.70rem; 
+}
+
+.form-container .btn-submit {
+    display: block;
+    border-radius: 0.30rem;
+    font-size: 1.30rem;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    border-width: 1px;
+    border-style: solid;
+    font-size: 1rem;
+    padding: 0.35rem 0.65rem;
+}
+.form-container .btn-submit[disabled] {
+    cursor: default; }
+
+.form-container .submit-message {
+    margin-right: 0.70rem; 
+}
+
+
+
+/*Button */
+.primary-color {
+    color: #0275D8 !important;
+}
+
+.primary-bg-color {
+    background-color: #0275D8 !important;
+}
+
+.primary-border-color {
+    border-color: #0275D8 !important;
+}
+
+.primary-button {
+    background-color: #0275D8 !important;
+    border-color: #0275D8 !important;
+    opacity: 1;
+}
+
+.primary-button-active {
+    background-color: white !important;
+    border-color: #0275D8 !important;
+    color: #0275D8 !important;
+    opacity: 1;
+}
+
+.primary-button:hover,
+.primary-button-active:hover {
+    opacity: 0.7;
+}
+
+.primary-button[disabled],
+.primary-button-active[disabled] {
+    opacity: 0.3;
+}
+
+.sidebar-color {
+    background-color: #1a242f !important; /* */
+}

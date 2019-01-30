@@ -28,8 +28,14 @@ public class Produto implements Serializable {
     @Column(name = "id")
     private Long id;
 
+    @Column(name ="title")
+    private String title;
+    
     @Column(name ="descricao")
     private String descricao;
+    
+    @Column(name ="media")
+    private String media;
 
     public Long getId() {
         return id;
@@ -46,16 +52,22 @@ public class Produto implements Serializable {
     public void setDescricao(String descricao) {
         this.descricao = descricao;
     }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+    
     
     
     public static enum ProdutoStatus{
-        CANDIDATURA,
-        AGUARDA_DESPACHO_ABERTURA,
-        ABERTO,
-        ARQUIVADO,
-        ANALISE_TECNICO,
-        AGUARDA_DESPACHO_FINANCEIRO,
-        FINANCIAMENTO
+        PUBLICADO,
+        EM_LEILAO,
+        GANHO,
+        ARQUIVADO
     }
     
 }

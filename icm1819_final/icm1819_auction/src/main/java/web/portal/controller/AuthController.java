@@ -6,17 +6,34 @@
 package web.portal.controller;
 
 
-import security.CustomUserDetails;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 /**
  *
  * @author pauloborges
  */
+@Controller
+@RequestMapping("/auth")
 public class AuthController {
-    /*
-    @RequestMapping(value = "/login", method = RequestMethod.GET)
+
+    @RequestMapping(method = RequestMethod.GET)
     public String loginPage() {
-        return "login";
+        return "auth/signin";
     }
-    */
+    
+    @RequestMapping(value = "/logout", method = RequestMethod.GET)
+    public String loginLout() {
+        
+        //TODO Close Session at redirect to home page 
+        return "redirect:/";
+        
+    }
+    
+    @RequestMapping(value = "/signup", method = RequestMethod.GET)
+    public String registerPage(Model model) {
+        return "auth/signup";
+    }
 }
