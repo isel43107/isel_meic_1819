@@ -1,11 +1,14 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib prefix="h" tagdir="/WEB-INF/tags" %>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <jsp:include page="./fragments/headTag.jsp"/>
+        <h:pageHeader />
     </head>
 
     <body>
-        <jsp:include page="./fragments/bodyHeader.jsp"/>
+        <h:pageTopMenu />
 
         <div class="container-fluid">
           <div class="row">
@@ -20,6 +23,6 @@
           </div>
         </div>
 
-        <jsp:include page="./fragments/bodyFooter.jsp"/>
+        <h:pageFooter />
     </body>
 </html>

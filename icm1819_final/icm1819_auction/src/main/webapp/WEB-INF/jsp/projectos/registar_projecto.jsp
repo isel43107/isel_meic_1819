@@ -2,19 +2,20 @@
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
+<%@ taglib prefix="h" tagdir="/WEB-INF/tags" %>
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <jsp:include page="../fragments/headTag.jsp"/>
+        <h:pageHeader />
     </head>
     <body>
 
-        <jsp:include page="../fragments/bodyHeader.jsp"/>
+        <h:pageTopMenu />
 
         <div class="container-fluid">
             <div class="row">
 
-                <jsp:include page="../fragments/bodyProjectosSideBar.jsp"/>
+                <h:projetoSideBar />
 
                 <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
                     <h1 class="page-header">Projectos</h1>
@@ -71,6 +72,6 @@
             </div>
         </div>
 
-        <jsp:include page="../fragments/bodyFooter.jsp"/>
+        <h:pageFooter/>
     </body>
 </html>

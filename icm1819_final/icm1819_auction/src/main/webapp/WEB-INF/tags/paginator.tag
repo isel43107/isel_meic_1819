@@ -1,17 +1,14 @@
 <!-- paginator.tag -->
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<%@ taglib uri="http://www.springframework.org/tags" prefix="spring"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn"%>
-
 
 <%@ attribute name="baseUrl" type="java.lang.String" required="true" rtexprvalue="true" description="The base page URL/path"%>
-<%@ attribute name="paginCurrentIndex" type="int" required="true" rtexprvalue="true" description="The current paging"%>
-<%@ attribute name="paginBeginIndex" type="int" required="true" rtexprvalue="true" description="The begin index paging"%>
-<%@ attribute name="paginEndIndex" type="int" required="true" rtexprvalue="true" description="The end index paging"%>
-<%@ attribute name="paginTotalPages" type="int" required="true" rtexprvalue="true" description="The total paging"%>
+<%@ attribute name="paginCurrentIndex" type="java.lang.Integer" required="true" rtexprvalue="true" description="The current paging"%>
+<%@ attribute name="paginBeginIndex" type="java.lang.Integer" required="true" rtexprvalue="true" description="The begin index paging"%>
+<%@ attribute name="paginEndIndex" type="java.lang.Integer" required="true" rtexprvalue="true" description="The end index paging"%>
+<%@ attribute name="paginTotalPages" type="java.lang.Integer" required="true" rtexprvalue="true" description="The total paging"%>
 
 
-<c:url var="firstUrl"   value="?page=1&size=8&sort=projectoNome,desc" />
+<c:url var="firstUrl"   value="?page=1" />
 <c:url var="lastUrl"    value="?page=${paginTotalPages}" />
 <c:url var="prevUrl"    value="?page=${paginCurrentIndex - 1}" />
 <c:url var="nextUrl"    value="?page=${paginCurrentIndex + 1}" />

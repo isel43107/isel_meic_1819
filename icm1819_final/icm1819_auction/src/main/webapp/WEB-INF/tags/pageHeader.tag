@@ -1,3 +1,4 @@
+<!-- HEADER BEGIN -->
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -6,7 +7,7 @@
 <meta name="author" content="ICM1819-Auction">
 <link rel="icon" href="/static/img/favicon.ico">
 
-<!-- -->
+<!-- Mobile touch icon -->
 <link rel="apple-touch-icon" sizes="180x180" href="/static/img/favicon/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/static/img/favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/static/img/favicon/favicon-16x16.png">
@@ -32,3 +33,4 @@
   <script src="/assets/js/html5shiv/3.7.3/html5shiv.min.js"></script>
   <script src="/assets/js/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
+<!-- HEADER END -->

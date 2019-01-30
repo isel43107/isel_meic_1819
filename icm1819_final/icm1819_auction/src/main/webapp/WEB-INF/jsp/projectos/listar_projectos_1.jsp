@@ -1,33 +1,37 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="h" tagdir="/WEB-INF/tags" %>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <jsp:include page="../fragments/headTag.jsp"/>
+        <h:pageHeader />
     </head>
-    <body>
 
-        <jsp:include page="../fragments/bodyHeader.jsp"/>
+    <body>
+        <h:pageTopMenu />
 
         <div class="container-fluid">
             <div class="row">
 
-                <jsp:include page="../fragments/bodyProjectosSideBar.jsp"/>
+                <h:projetoSideBar />
 
                 <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
                     <h1 class="page-header">Projectos</h1>
 
-                    <jsp:include page="../fragments/projectosToolbar.jsp"/>
+                    <h:projetoToolbar />
                     <h2 class="sub-header">Lista de Projectos</h2>
 
                     <form class="form-inline">
                         <div class="input-group">
-                            <span class="input-group-addon" id="btnGroupAddon2">@</span>
-                            <input type="text" class="form-control"  id="searchProject" placeholder="pesquisa por projecto" aria-describedby="btnGroupAddon2">
+                            <span class="input-group-addon">@</span>
+                            <input type="text" class="form-control" name="search" id="search" placeholder="pesquisa aqui...">
                         </div>
                         <button type="submit" class="btn btn-primary">Pesquisar</button>
                     </form>
+
                     <div class="table-responsive">
                         <table class="table table-striped table-bordered">
                             <thead>
@@ -53,9 +57,7 @@
                         </table>
                     </div>
 
-                    <!-- SETUP PAGINATION
-                     ?page=2&size=9&sort=projectoNome,desc
- -->
+                    <!-- SETUP PAGINATION ?page=2&size=9&sort=projectoNome,desc -->
                     <c:set var="baseUrl"    value="/projectos/listar1" />
                     <jsp:include page="../fragments/pagination.jsp"/>
                     
@@ -63,6 +65,6 @@
             </div>
         </div>
 
-        <jsp:include page="../fragments/bodyFooter.jsp"/>
+        <h:pageFooter/>
     </body>
 </html>
