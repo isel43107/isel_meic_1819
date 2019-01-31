@@ -1,4 +1,4 @@
-package config;
+package web.config;
 
 import java.util.List;
 import org.springframework.context.annotation.Bean;
@@ -7,11 +7,11 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.web.PageableHandlerMethodArgumentResolver;
 import org.springframework.web.method.support.HandlerMethodArgumentResolver;
 import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 @Configuration
-public class MvcConfig extends WebMvcConfigurerAdapter {
+public class WebConfig implements WebMvcConfigurer {
 
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {
@@ -26,9 +26,9 @@ public class MvcConfig extends WebMvcConfigurerAdapter {
     public void addArgumentResolvers(List<HandlerMethodArgumentResolver> argumentResolvers) {
         PageableHandlerMethodArgumentResolver resolver = new PageableHandlerMethodArgumentResolver();
         resolver.setOneIndexedParameters(true);
-        resolver.setFallbackPageable(new PageRequest(1, 10));
+        resolver.setFallbackPageable(PageRequest.of(1, 10));
         argumentResolvers.add(resolver);
-        super.addArgumentResolvers(argumentResolvers);
+        WebMvcConfigurer.super.addArgumentResolvers(argumentResolvers);
     }
 
     @Bean

@@ -1,6 +1,7 @@
 package domain.entity;
 
 import java.io.Serializable;
+import java.util.Collection;
 import java.util.Date;
 
 import javax.persistence.*;
@@ -13,11 +14,11 @@ public class User implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "userid")
+    @Column(name = "id", unique = true, nullable = false)
     private Long userId;
 
     @Column(name = "username")
-    private String userName;
+    private String username;
 
     @Column(name = "password")
     private String password;
@@ -28,32 +29,47 @@ public class User implements Serializable {
     @Column(name = "enabled")
     private boolean enabled;
     
-    @Column(name = "registration_token", unique = true , nullable = false)
-    private String registrationToken;
+    @Column(name = "account_non_expired")
+    private boolean accountNonExpired;
+    
+    @Column(name = "credentials_non_expired")
+    private boolean credentialsNonExpired;
+    
+    @Column(name = "account_non_locked")
+    private boolean accountNonLocked;
     
     @Temporal(TemporalType.TIMESTAMP)
     @Column(name = "registration_date", unique = false , nullable = false)
     private Date registrationDate;
     
-    @Column(name = "registration_validated")
-    private boolean registrationValidated;
+    @ManyToMany(fetch = FetchType.EAGER)
+    @JoinTable(name = "users_roles", joinColumns = @JoinColumn(name = "user_id", referencedColumnName = "id"), inverseJoinColumns = @JoinColumn(name = "role_id", referencedColumnName = "id"))
+    private Collection<URole> roles;
 
     public User() {}
 
     public User(User user) {
         this.userId = user.userId;
-        this.userName = user.userName;
+        this.username = user.username;
         this.email = user.email;
         this.password = user.password;
         this.enabled = user.enabled;
     }
 
-    public Long getUserid() {
+    public Long getUserId() {
         return userId;
     }
 
-    public void setUserid(Long userid) {
-        this.userId = userid;
+    public void setUserId(Long userId) {
+        this.userId = userId;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     public String getPassword() {
@@ -71,24 +87,6 @@ public class User implements Serializable {
     public void setEmail(String email) {
         this.email = email;
     }
-    
-    
-
-    public String getUserName() {
-        return userName;
-    }
-
-    public void setUserName(String userName) {
-        this.userName = userName;
-    }
-
-    public Long getUserId() {
-        return userId;
-    }
-
-    public void setUserId(Long userId) {
-        this.userId = userId;
-    }
 
     public boolean isEnabled() {
         return enabled;
@@ -98,12 +96,28 @@ public class User implements Serializable {
         this.enabled = enabled;
     }
 
-    public String getRegistrationToken() {
-        return registrationToken;
+    public boolean isAccountNonExpired() {
+        return accountNonExpired;
     }
 
-    public void setRegistrationToken(String registrationToken) {
-        this.registrationToken = registrationToken;
+    public void setAccountNonExpired(boolean accountNonExpired) {
+        this.accountNonExpired = accountNonExpired;
+    }
+
+    public boolean isCredentialsNonExpired() {
+        return credentialsNonExpired;
+    }
+
+    public void setCredentialsNonExpired(boolean credentialsNonExpired) {
+        this.credentialsNonExpired = credentialsNonExpired;
+    }
+
+    public boolean isAccountNonLocked() {
+        return accountNonLocked;
+    }
+
+    public void setAccountNonLocked(boolean accountNonLocked) {
+        this.accountNonLocked = accountNonLocked;
     }
 
     public Date getRegistrationDate() {
@@ -114,14 +128,13 @@ public class User implements Serializable {
         this.registrationDate = registrationDate;
     }
 
-    public boolean isRegistrationValidated() {
-        return registrationValidated;
+    public Collection<URole> getRoles() {
+        return roles;
     }
 
-    public void setRegistrationValidated(boolean registrationValidated) {
-        this.registrationValidated = registrationValidated;
+    public void setRoles(Collection<URole> roles) {
+        this.roles = roles;
     }
-    
-    
 
+   
 }

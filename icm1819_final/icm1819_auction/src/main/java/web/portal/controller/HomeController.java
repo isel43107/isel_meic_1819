@@ -14,6 +14,6 @@ public class HomeController {
         
         //TODO present home page with 
         //return "redirect:/dashboard";
-        return "index";
+        return "home/index";
     }
 }

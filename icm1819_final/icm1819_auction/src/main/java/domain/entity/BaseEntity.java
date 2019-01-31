@@ -5,6 +5,7 @@
  */
 package domain.entity;
 
+import java.io.Serializable;
 import javax.persistence.MappedSuperclass;
 
 /**
@@ -12,6 +13,6 @@ import javax.persistence.MappedSuperclass;
  * @author pauloborges
  */
 @MappedSuperclass
-public class BaseEntity {
+public class BaseEntity implements Serializable{
     
 }

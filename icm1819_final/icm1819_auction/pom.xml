@@ -70,12 +70,12 @@
             <artifactId>spring-boot-starter-data-jpa</artifactId>
         </dependency>
         <!-- dep-end:: Spring Data JPA -->
-        <!-- dep::security  
+        <!-- dep::security -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-security</artifactId>
         </dependency>
-        -->
+        
         <!-- dep-end::security -->   
         <!-- dep::thymeleaf 
         <dependency>

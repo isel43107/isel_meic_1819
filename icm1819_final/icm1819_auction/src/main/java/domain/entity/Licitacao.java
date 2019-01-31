@@ -24,7 +24,7 @@ import javax.persistence.TemporalType;
  */
 @Entity
 @Table(name = "bid")
-public class Licitacao implements Serializable {
+public class Licitacao implements Serializable{
 
     private static final long serialVersionUID = 1L;
     

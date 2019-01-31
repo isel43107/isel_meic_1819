@@ -6,11 +6,12 @@
 package domain.entity;
 
 import java.io.Serializable;
-import javax.persistence.Column;
+import java.util.Collection;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
 /**
@@ -18,18 +19,17 @@ import javax.persistence.Table;
  * @author pauloborges
  */
 @Entity
-@Table(name = "categoria")
-public class Categoria implements Serializable{
-    
-    private static final long serialVersionUID = 1L;
+@Table(name = "permission")
+public class UPermission implements Serializable{
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "id")
     private Long id;
 
-    @Column(name = "title")
-    private String title;
+    private String name;
+
+    @ManyToMany(mappedBy = "permissions")
+    private Collection<URole> roles;
 
     public Long getId() {
         return id;
@@ -39,13 +39,21 @@ public class Categoria implements Serializable{
         this.id = id;
     }
 
-    public String getTitle() {
-        return title;
+    public String getName() {
+        return name;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
+    public void setName(String name) {
+        this.name = name;
     }
-    
+
+    public Collection<URole> getRoles() {
+        return roles;
+    }
+
+    public void setRoles(Collection<URole> roles) {
+        this.roles = roles;
+    }
+
     
 }

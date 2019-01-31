@@ -21,7 +21,7 @@ import javax.persistence.Table;
  */
 @Entity
 @Table(name = "projecto")
-public class Projecto  implements Serializable {
+public class Projecto implements Serializable {
 
     private static final long serialVersionUID = 1L;
     

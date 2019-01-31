@@ -22,6 +22,7 @@
                     <h1 class="page-header">Projectos</h1>
 
                     <h:projetoToolbar />
+                    
                     <h2 class="sub-header">Lista de Projectos</h2>
 
                     <form class="form-inline">

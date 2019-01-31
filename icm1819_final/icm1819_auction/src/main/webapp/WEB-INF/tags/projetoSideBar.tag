@@ -2,7 +2,7 @@
     <ul class="nav nav-sidebar">
         <li class="active"><a href="/projectos">Projectos <span class="sr-only">(current)</span></a></li>
         <li><a href="#">Reports</a></li>
-        <li><a href="#">Analytics</a></li>
-        <li><a href="#">Export</a></li>
+        <li><a href="#">Candidatura</a></li>
+        <li><a href="#">Pagamento</a></li>
     </ul>
 </div>

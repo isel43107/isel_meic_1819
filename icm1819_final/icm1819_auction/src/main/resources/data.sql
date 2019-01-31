@@ -72,3 +72,23 @@ projectoValor, projectoPromotorNome, projectoPromotorEmail, projectoStatus)
 values (11, 'p-2019-03', 'CPSELabs Boosting water efficiency with smart meters and sensors',
 'SniffPhone, What if sensors in your pipelines could help you save water and reduce your bills? That is what the Spanish company A-cing and the Digital Innovation Hub of the Technical University of Madrid have developed within the European project CPSELabs.',
 2040000.0,  'Pedro F', 'pedro@daw.isel', 'CANDIDATURA');
+
+
+/* CATEGORIA */
+insert into categoria (id, title) 
+value(1, 'Telemóveis e Acessorios');
+
+insert into categoria (id, title) 
+value(2, 'Electrodomésticos');
+
+insert into categoria (id, title) 
+value(3, 'Imagem e Som');
+
+insert into categoria (id, title) 
+value(4, 'Escritorio e Mobilizado');
+
+insert into categoria (id, title) 
+value(5, 'Informática');
+
+insert into categoria (id, title) 
+value(6, 'Automovel');

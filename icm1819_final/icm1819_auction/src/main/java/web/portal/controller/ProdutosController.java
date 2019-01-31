@@ -31,7 +31,7 @@ public class ProdutosController {
         this.produtoRepository = produtoRepository;
     }
     
-    @RequestMapping(value = "/listar1", method = RequestMethod.GET)
+    @RequestMapping(method = RequestMethod.GET)
     public String listarProjectosPage(Pageable pageable, Model model) {
         Page<Produto> projectos = produtoRepository.findAll(pageable);
 
@@ -41,11 +41,11 @@ public class ProdutosController {
         int end = Math.min(begin + pageSize, projectos.getTotalPages());
 
         model.addAttribute("produtos", projectos.getContent());
-        model.addAttribute("beginIndex", begin);                        //paginBeginIndex
-        model.addAttribute("endIndex", end);                            //paginEndIndex
-        model.addAttribute("currentIndex", current);                    //paginCurrentIndex
-        model.addAttribute("totalPages", projectos.getTotalPages());    //paginTotalPages
+        model.addAttribute("paginBeginIndex", begin);                        //paginBeginIndex
+        model.addAttribute("paginEndIndex", end);                            //paginEndIndex
+        model.addAttribute("paginCurrentIndex", current);                    //paginCurrentIndex
+        model.addAttribute("paginTotalPages", projectos.getTotalPages());    //paginTotalPages
 
-        return "produtos/listar_produtos";
+        return "produtos/produtos_listar";
     }
 }

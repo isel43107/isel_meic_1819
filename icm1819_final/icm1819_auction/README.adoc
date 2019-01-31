@@ -133,4 +133,27 @@ Metodo de ganhar o leilão
 
 == Referencia 
 * oportunityleiloes.com/pt 
-* 
+
+
+== Segurança
+
+* Password Encriptado com
+** Bcrypt - https://en.wikipedia.org/wiki/Bcrypt
+** PBKDF2
+
+
+== Integridade 
+
+* Um Utilizador podera efectar varias licitações
+* Editar produtos (A
+* Apagar produtos (Antes de 
+
+
+== Regras de negocio - Produtos em Leilão
+
+* Não pode Editar/Apagar Produtos que ja receberam uma licitação
+* Podera apenas cancelar o Leilão dentro de um prazo limite, apos publicação
+
+
+
+
