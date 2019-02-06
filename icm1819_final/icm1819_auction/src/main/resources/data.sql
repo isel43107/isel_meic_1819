@@ -76,19 +76,19 @@ values (11, 'p-2019-03', 'CPSELabs Boosting water efficiency with smart meters a
 
 /* CATEGORIA */
 insert into categoria (id, title) 
-value(1, 'Telemóveis e Acessorios')
+values (1, 'Telemóveis e Acessorios');
 
 insert into categoria (id, title) 
-value(2, 'Electrodomésticos')
+values (2, 'Electrodomésticos');
 
 insert into categoria (id, title) 
-value(3, 'Imagem e Som')
+values (3, 'Imagem e Som');
 
 insert into categoria (id, title) 
-value(4, 'Escritorio e Mobilizado');
+values (4, 'Escritorio e Mobilizado');
 
 insert into categoria (id, title) 
-value(5, 'Informática')
+values (5, 'Informática');
 
 insert into categoria (id, title) 
-value(6, 'Automovel')
+values (6, 'Automovel');
