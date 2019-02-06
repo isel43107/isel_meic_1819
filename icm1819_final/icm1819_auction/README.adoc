@@ -1,6 +1,4 @@
-= ICM1819 - Auction System 
-
-Leição 
+= ICM1819 - Auction System (Leilão Online) 
 
 == Funcionalidades
 
@@ -154,6 +152,30 @@ Metodo de ganhar o leilão
 * Não pode Editar/Apagar Produtos que ja receberam uma licitação
 * Podera apenas cancelar o Leilão dentro de um prazo limite, apos publicação
 
+
+
+== Spring configurações
+
+* ErrorMvcAutoconfiguration
+
+ disable White Label error page, I show two approaches: 
+- Using application.properties (server.error.whitelabel=false) 
+- Using annotations to disable the @ErrorMvcAutoconfiguration
+* resources/templates/error.html
+
+
+----
+server.error.whitelabel.enabled=false
+spring.autoconfigure.exclude=org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration
+----
+
+.Example (BasicErrorController
+
+----
+@EnableAutoConfiguration(exclude = {
+ ErrorMvcAutoConfiguration.class
+})
+----
 
 
 

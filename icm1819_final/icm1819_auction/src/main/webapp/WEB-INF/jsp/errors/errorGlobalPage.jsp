@@ -2,6 +2,7 @@
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ page session="false"%>
 <!doctype html>
 <html lang="en">
   <head>
@@ -26,10 +27,11 @@
                     -->
                 </a>
             </div>
-            <form class="form-container">
-                <div class="form-title">Page not found</div>
-                <button type="submit" class="form-submit primary-button">Login</button>
-            </form>
+            <div class="form-container">
+		<div class="form-title">Error Page</div>
+                <p><a href="/">Go to Home</a></p>
+                <p>${errorMsg}</p>
+            </div>
         </div>
     </div>
 
