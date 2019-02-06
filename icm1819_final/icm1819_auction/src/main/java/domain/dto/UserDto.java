@@ -6,6 +6,7 @@
 package domain.dto;
 
 import domain.validation.PasswordMatches;
+import javax.validation.constraints.Email;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 
@@ -30,6 +31,7 @@ public class UserDto {
     private String matchingPassword;
      
     @NotNull
+    @Email
     @NotEmpty
     private String email;
 
