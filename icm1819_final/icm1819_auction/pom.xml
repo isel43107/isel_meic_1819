@@ -63,7 +63,7 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-        <!-- dep-end::web -->
+        
         <!-- dep:: Spring Data JPA -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -75,6 +75,13 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-security</artifactId>
         </dependency>
+        
+       <!-- dep:: hateoas -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-hateoas</artifactId>
+        </dependency>
+        <!-- dep-end::hateoas -->
         
         <!-- dep-end::security -->   
         <!-- dep::thymeleaf 

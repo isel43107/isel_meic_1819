@@ -92,3 +92,18 @@ values (5, 'Informática');
 
 insert into categoria (id, title) 
 values (6, 'Automovel');
+
+
+/* users */
+insert into users (id, username, password, email, enabled, 
+account_non_expired, credentials_non_expired, account_non_locked, registration_date ) 
+values (1, 'poolborges', 'passwo', 'a43107@alunos.isel.pt', true, 
+true, true, true, '2019-01-31 15:30:14.332');
+
+
+
+/* PRODUTOS */
+insert into produto (id, title, descricao, media, 
+minimun_value, finish_date, status, categoria_id, owner_id) 
+values (1, 'Nokia 3310', 'Telefone em bom estado de conservação', 
+'', 12.5, '2019-08-31 15:30:14.332' , 'PUBLICADO', 1, 1);
